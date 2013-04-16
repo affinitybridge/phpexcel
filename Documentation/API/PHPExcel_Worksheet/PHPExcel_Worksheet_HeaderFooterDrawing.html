@@ -13,7 +13,7 @@
   <tr>
     <td class="header_menu">
         
-                                                                                                                                                                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                                                                                                                                                                                                
                                                                                                               		  [ <a href="../classtrees_PHPExcel_Worksheet.html" class="menu">class tree: PHPExcel_Worksheet</a> ]
 		  [ <a href="../elementindex_PHPExcel_Worksheet.html" class="menu">index: PHPExcel_Worksheet</a> ]
 		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
@@ -30,21 +30,22 @@
 	</div>
       <b>Packages:</b><br />
               <a href="../li_PHPExcel.html">PHPExcel</a><br />
-              <a href="../li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
               <a href="../li_JAMA.html">JAMA</a><br />
               <a href="../li_Math_Stats.html">Math_Stats</a><br />
               <a href="../li_PHPExcel_CachedObjectStorage.html">PHPExcel_CachedObjectStorage</a><br />
               <a href="../li_PHPExcel_Calculation.html">PHPExcel_Calculation</a><br />
               <a href="../li_PHPExcel_Cell.html">PHPExcel_Cell</a><br />
+              <a href="../li_PHPExcel_Chart.html">PHPExcel_Chart</a><br />
+              <a href="../li_PHPExcel_Chart_Renderer.html">PHPExcel_Chart_Renderer</a><br />
               <a href="../li_PHPExcel_Reader.html">PHPExcel_Reader</a><br />
               <a href="../li_PHPExcel_Reader_Excel5.html">PHPExcel_Reader_Excel5</a><br />
               <a href="../li_PHPExcel_Reader_Excel2007.html">PHPExcel_Reader_Excel2007</a><br />
               <a href="../li_PHPExcel_RichText.html">PHPExcel_RichText</a><br />
               <a href="../li_PHPExcel_Settings.html">PHPExcel_Settings</a><br />
               <a href="../li_PHPExcel_Shared.html">PHPExcel_Shared</a><br />
-              <a href="../li_PHPExcel_Shared_Best_Fit.html">PHPExcel_Shared_Best_Fit</a><br />
               <a href="../li_PHPExcel_Shared_Escher.html">PHPExcel_Shared_Escher</a><br />
               <a href="../li_PHPExcel_Shared_OLE.html">PHPExcel_Shared_OLE</a><br />
+              <a href="../li_PHPExcel_Shared_Trend.html">PHPExcel_Shared_Trend</a><br />
               <a href="../li_PHPExcel_Shared_ZipArchive.html">PHPExcel_Shared_ZipArchive</a><br />
               <a href="../li_PHPExcel_Style.html">PHPExcel_Style</a><br />
               <a href="../li_PHPExcel_Worksheet.html">PHPExcel_Worksheet</a><br />
@@ -55,9 +56,13 @@
             <br /><br />
                         <b>Files:</b><br />
       	  <div class="package">
+			<a href="../PHPExcel_Worksheet/_PHPExcel---Worksheet---AutoFilter.php.html">		AutoFilter.php
+		</a><br>
 			<a href="../PHPExcel_Worksheet/_PHPExcel---Worksheet---BaseDrawing.php.html">		BaseDrawing.php
 		</a><br>
 			<a href="../PHPExcel_Worksheet/_PHPExcel---Worksheet---CellIterator.php.html">		CellIterator.php
+		</a><br>
+			<a href="../PHPExcel_Worksheet/_PHPExcel---Worksheet---AutoFilter---Column.php.html">		Column.php
 		</a><br>
 			<a href="../PHPExcel_Worksheet/_PHPExcel---Worksheet---ColumnDimension.php.html">		ColumnDimension.php
 		</a><br>
@@ -79,6 +84,8 @@
 		</a><br>
 			<a href="../PHPExcel_Worksheet/_PHPExcel---Worksheet---RowIterator.php.html">		RowIterator.php
 		</a><br>
+			<a href="../PHPExcel_Worksheet/_PHPExcel---Worksheet---AutoFilter---Column---Rule.php.html">		Rule.php
+		</a><br>
 			<a href="../PHPExcel_Worksheet/_PHPExcel---Worksheet---SheetView.php.html">		SheetView.php
 		</a><br>
 			<a href="../PHPExcel_Worksheet/_PHPExcel---Worksheet.php.html">		Worksheet.php
@@ -89,6 +96,9 @@
             <b>Classes:</b><br />
         <div class="package">
 		    		<a href="../PHPExcel_Worksheet/PHPExcel_Worksheet.html">PHPExcel_Worksheet</a><br />
+	    		<a href="../PHPExcel_Worksheet/PHPExcel_Worksheet_AutoFilter.html">PHPExcel_Worksheet_AutoFilter</a><br />
+	    		<a href="../PHPExcel_Worksheet/PHPExcel_Worksheet_AutoFilter_Column.html">PHPExcel_Worksheet_AutoFilter_Column</a><br />
+	    		<a href="../PHPExcel_Worksheet/PHPExcel_Worksheet_AutoFilter_Column_Rule.html">PHPExcel_Worksheet_AutoFilter_Column_Rule</a><br />
 	    		<a href="../PHPExcel_Worksheet/PHPExcel_Worksheet_BaseDrawing.html">PHPExcel_Worksheet_BaseDrawing</a><br />
 	    		<a href="../PHPExcel_Worksheet/PHPExcel_Worksheet_CellIterator.html">PHPExcel_Worksheet_CellIterator</a><br />
 	    		<a href="../PHPExcel_Worksheet/PHPExcel_Worksheet_ColumnDimension.html">PHPExcel_Worksheet_ColumnDimension</a><br />
@@ -133,7 +143,7 @@ Source Location: /PHPExcel/Worksheet/HeaderFooterDrawing.php<br /><br />
 
 <h4>Copyright:</h4>
 <ul>
-  <li>Copyright (c) 2006 - 2011 PHPExcel (http://www.codeplex.com/PHPExcel)</li>
+  <li>Copyright (c) 2006 - 2012 PHPExcel (http://www.codeplex.com/PHPExcel)</li>
 </ul>
                 <p class="implements">
             Implements interfaces:
@@ -457,13 +467,13 @@ Source Location: /PHPExcel/Worksheet/HeaderFooterDrawing.php<br /><br />
 <a name="class_details"></a>
 <h3>Class Details</h3>
 <div class="tags">
-[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a36">36</a>]<br />
+[line 36]<br />
 PHPExcel_Worksheet_HeaderFooterDrawing<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>Copyright (c) 2006 - 2011 PHPExcel (http://www.codeplex.com/PHPExcel)</td>
+    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>Copyright (c) 2006 - 2012 PHPExcel (http://www.codeplex.com/PHPExcel)</td>
   </tr>
 </table>
 </div>
@@ -477,7 +487,7 @@ PHPExcel_Worksheet_HeaderFooterDrawing<br /><br /><br /><br />
 	<a name="var$_height"></a>
 	<p></p>
 	<h4>$_height = <span class="value"></span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a78">78</a>]</p>
+	<p>[line 78]</p>
   Height<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
@@ -505,7 +515,7 @@ PHPExcel_Worksheet_HeaderFooterDrawing<br /><br /><br /><br />
 	<a name="var$_name"></a>
 	<p></p>
 	<h4>$_name = <span class="value"></span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a50">50</a>]</p>
+	<p>[line 50]</p>
   Name<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
@@ -533,7 +543,7 @@ PHPExcel_Worksheet_HeaderFooterDrawing<br /><br /><br /><br />
 	<a name="var$_offsetX"></a>
 	<p></p>
 	<h4>$_offsetX = <span class="value"></span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a57">57</a>]</p>
+	<p>[line 57]</p>
   Offset X<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
@@ -561,7 +571,7 @@ PHPExcel_Worksheet_HeaderFooterDrawing<br /><br /><br /><br />
 	<a name="var$_offsetY"></a>
 	<p></p>
 	<h4>$_offsetY = <span class="value"></span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a64">64</a>]</p>
+	<p>[line 64]</p>
   Offset Y<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
@@ -589,7 +599,7 @@ PHPExcel_Worksheet_HeaderFooterDrawing<br /><br /><br /><br />
 	<a name="var$_resizeProportional"></a>
 	<p></p>
 	<h4>$_resizeProportional = <span class="value"></span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a85">85</a>]</p>
+	<p>[line 85]</p>
   Proportional resize<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
@@ -617,7 +627,7 @@ PHPExcel_Worksheet_HeaderFooterDrawing<br /><br /><br /><br />
 	<a name="var$_width"></a>
 	<p></p>
 	<h4>$_width = <span class="value"></span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a71">71</a>]</p>
+	<p>[line 71]</p>
   Width<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
@@ -651,7 +661,7 @@ PHPExcel_Worksheet_HeaderFooterDrawing<br /><br /><br /><br />
 
   <hr />
 	<a name="method__construct"></a>
-	<h3>constructor __construct <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a90">90</a>]</span></h3>
+	<h3>constructor __construct <span class="smalllinenumber">[line 90]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -676,7 +686,7 @@ PHPExcel_Worksheet_HeaderFooterDrawing<br /><br /><br /><br />
   </div>
   <hr />
 	<a name="methodgetExtension"></a>
-	<h3>method getExtension <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a280">280</a>]</span></h3>
+	<h3>method getExtension <span class="smalllinenumber">[line 280]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -701,7 +711,7 @@ PHPExcel_Worksheet_HeaderFooterDrawing<br /><br /><br /><br />
   </div>
   <hr />
 	<a name="methodgetFilename"></a>
-	<h3>method getFilename <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a271">271</a>]</span></h3>
+	<h3>method getFilename <span class="smalllinenumber">[line 271]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -726,7 +736,7 @@ PHPExcel_Worksheet_HeaderFooterDrawing<br /><br /><br /><br />
   </div>
   <hr />
 	<a name="methodgetHashCode"></a>
-	<h3>method getHashCode <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a325">325</a>]</span></h3>
+	<h3>method getHashCode <span class="smalllinenumber">[line 325]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -754,7 +764,7 @@ PHPExcel_Worksheet_HeaderFooterDrawing<br /><br /><br /><br />
   </div>
   <hr />
 	<a name="methodgetHeight"></a>
-	<h3>method getHeight <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a195">195</a>]</span></h3>
+	<h3>method getHeight <span class="smalllinenumber">[line 195]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -779,7 +789,7 @@ PHPExcel_Worksheet_HeaderFooterDrawing<br /><br /><br /><br />
   </div>
   <hr />
 	<a name="methodgetName"></a>
-	<h3>method getName <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a107">107</a>]</span></h3>
+	<h3>method getName <span class="smalllinenumber">[line 107]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -804,7 +814,7 @@ PHPExcel_Worksheet_HeaderFooterDrawing<br /><br /><br /><br />
   </div>
   <hr />
 	<a name="methodgetOffsetX"></a>
-	<h3>method getOffsetX <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a127">127</a>]</span></h3>
+	<h3>method getOffsetX <span class="smalllinenumber">[line 127]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -829,7 +839,7 @@ PHPExcel_Worksheet_HeaderFooterDrawing<br /><br /><br /><br />
   </div>
   <hr />
 	<a name="methodgetOffsetY"></a>
-	<h3>method getOffsetY <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a147">147</a>]</span></h3>
+	<h3>method getOffsetY <span class="smalllinenumber">[line 147]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -854,7 +864,7 @@ PHPExcel_Worksheet_HeaderFooterDrawing<br /><br /><br /><br />
   </div>
   <hr />
 	<a name="methodgetPath"></a>
-	<h3>method getPath <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a290">290</a>]</span></h3>
+	<h3>method getPath <span class="smalllinenumber">[line 290]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -879,7 +889,7 @@ PHPExcel_Worksheet_HeaderFooterDrawing<br /><br /><br /><br />
   </div>
   <hr />
 	<a name="methodgetResizeProportional"></a>
-	<h3>method getResizeProportional <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a251">251</a>]</span></h3>
+	<h3>method getResizeProportional <span class="smalllinenumber">[line 251]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -904,7 +914,7 @@ PHPExcel_Worksheet_HeaderFooterDrawing<br /><br /><br /><br />
   </div>
   <hr />
 	<a name="methodgetWidth"></a>
-	<h3>method getWidth <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a167">167</a>]</span></h3>
+	<h3>method getWidth <span class="smalllinenumber">[line 167]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -929,7 +939,7 @@ PHPExcel_Worksheet_HeaderFooterDrawing<br /><br /><br /><br />
   </div>
   <hr />
 	<a name="methodsetHeight"></a>
-	<h3>method setHeight <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a205">205</a>]</span></h3>
+	<h3>method setHeight <span class="smalllinenumber">[line 205]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -965,7 +975,7 @@ $pValue = 0])</code>
   </div>
   <hr />
 	<a name="methodsetName"></a>
-	<h3>method setName <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a117">117</a>]</span></h3>
+	<h3>method setName <span class="smalllinenumber">[line 117]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1001,7 +1011,7 @@ $pValue = ''])</code>
   </div>
   <hr />
 	<a name="methodsetOffsetX"></a>
-	<h3>method setOffsetX <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a137">137</a>]</span></h3>
+	<h3>method setOffsetX <span class="smalllinenumber">[line 137]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1037,7 +1047,7 @@ $pValue = 0])</code>
   </div>
   <hr />
 	<a name="methodsetOffsetY"></a>
-	<h3>method setOffsetY <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a157">157</a>]</span></h3>
+	<h3>method setOffsetY <span class="smalllinenumber">[line 157]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1073,7 +1083,7 @@ $pValue = 0])</code>
   </div>
   <hr />
 	<a name="methodsetPath"></a>
-	<h3>method setPath <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a302">302</a>]</span></h3>
+	<h3>method setPath <span class="smalllinenumber">[line 302]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1118,7 +1128,7 @@ $pVerifyFile = true])</code>
   </div>
   <hr />
 	<a name="methodsetResizeProportional"></a>
-	<h3>method setResizeProportional <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a261">261</a>]</span></h3>
+	<h3>method setResizeProportional <span class="smalllinenumber">[line 261]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1154,7 +1164,7 @@ $pValue = true])</code>
   </div>
   <hr />
 	<a name="methodsetWidth"></a>
-	<h3>method setWidth <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a177">177</a>]</span></h3>
+	<h3>method setWidth <span class="smalllinenumber">[line 177]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1190,7 +1200,7 @@ $pValue = 0])</code>
   </div>
   <hr />
 	<a name="methodsetWidthAndHeight"></a>
-	<h3>method setWidthAndHeight <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a231">231</a>]</span></h3>
+	<h3>method setWidthAndHeight <span class="smalllinenumber">[line 231]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1237,7 +1247,7 @@ $height = 0])</code>
   </div>
   <hr />
 	<a name="method__clone"></a>
-	<h3>method __clone <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetHeaderFooterDrawing.php.html#a340">340</a>]</span></h3>
+	<h3>method __clone <span class="smalllinenumber">[line 340]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1265,7 +1275,7 @@ $height = 0])</code>
 
         <div class="credit">
 		    <hr />
-		    Documentation generated on Sun, 27 Feb 2011 16:32:17 -0800 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+		    Documentation generated on Fri, 12 Oct 2012 00:16:27 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>

@@ -2,7 +2,7 @@
 /**
  * PHPExcel
  *
- * Copyright (C) 2006 - 2011 PHPExcel
+ * Copyright (C) 2006 - 2012 PHPExcel
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,24 +20,39 @@
  *
  * @category   PHPExcel
  * @package    PHPExcel
- * @copyright  Copyright (c) 2006 - 2011 PHPExcel (http://www.codeplex.com/PHPExcel)
+ * @copyright  Copyright (c) 2006 - 2012 PHPExcel (http://www.codeplex.com/PHPExcel)
  * @license    http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt	LGPL
- * @version    1.7.6, 2011-02-27
+ * @version    1.7.8, 2012-10-12
  */
 
 /** Error reporting */
 error_reporting(E_ALL);
-
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
 date_default_timezone_set('Europe/London');
 
-/** PHPExcel */
+if (PHP_SAPI == 'cli')
+	die('This example should only be run from a Web Browser');
+
+/** Include PHPExcel */
 require_once '../Classes/PHPExcel.php';
+
+
+//	Change these values to select the Rendering library that you wish to use
+//		and its directory location on your server
+//$rendererName = PHPExcel_Settings::PDF_RENDERER_TCPDF;
+$rendererName = PHPExcel_Settings::PDF_RENDERER_MPDF;
+//$rendererName = PHPExcel_Settings::PDF_RENDERER_DOMPDF;
+//$rendererLibrary = 'tcPDF5.9';
+$rendererLibrary = 'mPDF5.4';
+//$rendererLibrary = 'domPDF0.6.0beta3';
+$rendererLibraryPath = dirname(__FILE__).'/../../../libraries/PDF/' . $rendererLibrary;
 
 
 // Create new PHPExcel object
 $objPHPExcel = new PHPExcel();
 
-// Set properties
+// Set document properties
 $objPHPExcel->getProperties()->setCreator("Maarten Balliauw")
 							 ->setLastModifiedBy("Maarten Balliauw")
 							 ->setTitle("PDF Test Document")
@@ -59,15 +74,27 @@ $objPHPExcel->setActiveSheetIndex(0)
             ->setCellValue('A4', 'Miscellaneous glyphs')
             ->setCellValue('A5', 'éàèùâêîôûëïüÿäöüç');
 
-// Rename sheet
+// Rename worksheet
 $objPHPExcel->getActiveSheet()->setTitle('Simple');
-
+$objPHPExcel->getActiveSheet()->setShowGridLines(false);
 
 // Set active sheet index to the first sheet, so Excel opens this as the first sheet
 $objPHPExcel->setActiveSheetIndex(0);
 
 
-// Redirect output to a client’s web browser (Excel2007)
+if (!PHPExcel_Settings::setPdfRenderer(
+		$rendererName,
+		$rendererLibraryPath
+	)) {
+	die(
+		'NOTICE: Please set the $rendererName and $rendererLibraryPath values' .
+		'<br />' .
+		'at the top of this script as appropriate for your directory structure'
+	);
+}
+
+
+// Redirect output to a client’s web browser (PDF)
 header('Content-Type: application/pdf');
 header('Content-Disposition: attachment;filename="01simple.pdf"');
 header('Cache-Control: max-age=0');

@@ -14,7 +14,7 @@
     <td class="header_menu">
         
                                                                             
-                                                                                                                                                                                                                                                                                                                                                                                                                                              		  [ <a href="classtrees_PHPExcel_Calculation.html" class="menu">class tree: PHPExcel_Calculation</a> ]
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                  		  [ <a href="classtrees_PHPExcel_Calculation.html" class="menu">class tree: PHPExcel_Calculation</a> ]
 		  [ <a href="elementindex_PHPExcel_Calculation.html" class="menu">index: PHPExcel_Calculation</a> ]
 		  	    [ <a href="elementindex.html" class="menu">all elements</a> ]
     </td>
@@ -33,6 +33,8 @@
               <a href="li_PHPExcel_CachedObjectStorage.html">PHPExcel_CachedObjectStorage</a><br />
               <a href="li_PHPExcel_Calculation.html">PHPExcel_Calculation</a><br />
               <a href="li_PHPExcel_Cell.html">PHPExcel_Cell</a><br />
+              <a href="li_PHPExcel_Chart.html">PHPExcel_Chart</a><br />
+              <a href="li_PHPExcel_Chart_Renderer.html">PHPExcel_Chart_Renderer</a><br />
               <a href="li_PHPExcel_Reader.html">PHPExcel_Reader</a><br />
               <a href="li_PHPExcel_Reader_Excel5.html">PHPExcel_Reader_Excel5</a><br />
               <a href="li_PHPExcel_Reader_Excel2007.html">PHPExcel_Reader_Excel2007</a><br />
@@ -43,8 +45,7 @@
               <a href="li_JAMA.html">JAMA</a><br />
               <a href="li_Math_Stats.html">Math_Stats</a><br />
               <a href="li_PHPExcel_Shared_OLE.html">PHPExcel_Shared_OLE</a><br />
-              <a href="li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
-              <a href="li_PHPExcel_Shared_Best_Fit.html">PHPExcel_Shared_Best_Fit</a><br />
+              <a href="li_PHPExcel_Shared_Trend.html">PHPExcel_Shared_Trend</a><br />
               <a href="li_PHPExcel_Shared_ZipArchive.html">PHPExcel_Shared_ZipArchive</a><br />
               <a href="li_PHPExcel_Style.html">PHPExcel_Style</a><br />
               <a href="li_PHPExcel_Worksheet.html">PHPExcel_Worksheet</a><br />
@@ -83,6 +84,8 @@
 		</a><br>
 			<a href="PHPExcel_Calculation/_PHPExcel---Calculation---MathTrig.php.html">		MathTrig.php
 		</a><br>
+			<a href="PHPExcel_Calculation/_PHPExcel---Calculation---Token---Stack.php.html">		Stack.php
+		</a><br>
 			<a href="PHPExcel_Calculation/_PHPExcel---Calculation---Statistical.php.html">		Statistical.php
 		</a><br>
 			<a href="PHPExcel_Calculation/_PHPExcel---Calculation---TextData.php.html">		TextData.php
@@ -108,7 +111,7 @@
 	    		<a href="PHPExcel_Calculation/PHPExcel_Calculation_MathTrig.html">PHPExcel_Calculation_MathTrig</a><br />
 	    		<a href="PHPExcel_Calculation/PHPExcel_Calculation_Statistical.html">PHPExcel_Calculation_Statistical</a><br />
 	    		<a href="PHPExcel_Calculation/PHPExcel_Calculation_TextData.html">PHPExcel_Calculation_TextData</a><br />
-	    		<a href="PHPExcel_Calculation/PHPExcel_Token_Stack.html">PHPExcel_Token_Stack</a><br />
+	    		<a href="PHPExcel_Calculation/PHPExcel_Calculation_Token_Stack.html">PHPExcel_Calculation_Token_Stack</a><br />
 	  </div>
                 </td>
     <td>
@@ -163,11 +166,11 @@
 							<dt><b>_ifCondition</b></dt>
 				<dd>in file Functions.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Functions.html#method_ifCondition">PHPExcel_Calculation_Functions::_ifCondition()</a></dd>
 							<dt><b>_isLeapYear</b></dt>
-				<dd>in file DateTime.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_DateTime.html#method_isLeapYear">PHPExcel_Calculation_DateTime::_isLeapYear()</a></dd>
+				<dd>in file DateTime.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_DateTime.html#method_isLeapYear">PHPExcel_Calculation_DateTime::_isLeapYear()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Identify if a year is a leap year or not</dd>
 							<dt><b>_localeFunc</b></dt>
 				<dd>in file Calculation.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation.html#method_localeFunc">PHPExcel_Calculation::_localeFunc()</a></dd>
 							<dt><b>_parseComplex</b></dt>
-				<dd>in file Engineering.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Engineering.html#method_parseComplex">PHPExcel_Calculation_Engineering::_parseComplex()</a></dd>
+				<dd>in file Engineering.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Engineering.html#method_parseComplex">PHPExcel_Calculation_Engineering::_parseComplex()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;_parseComplex</dd>
 							<dt><b>_raiseFormulaError</b></dt>
 				<dd>in file Calculation.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation.html#method_raiseFormulaError">PHPExcel_Calculation::_raiseFormulaError()</a></dd>
 							<dt><b>_translateFormulaToEnglish</b></dt>
@@ -183,19 +186,19 @@
 							<dt><b>__clone</b></dt>
 				<dd>in file Calculation.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation.html#method__clone">PHPExcel_Calculation::__clone()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;__clone implementation. Cloning should not be allowed in a Singleton!</dd>
 							<dt><b>__construct</b></dt>
-				<dd>in file Function.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Function.html#method__construct">PHPExcel_Calculation_Function::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Create a new PHPExcel_Calculation_Function</dd>
-							<dt><b>__construct</b></dt>
-				<dd>in file Calculation.php, method <a href="PHPExcel_Calculation/PHPExcel_Token_Stack.html#method__construct">PHPExcel_Token_Stack::__construct()</a></dd>
+				<dd>in file Stack.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Token_Stack.html#method__construct">PHPExcel_Calculation_Token_Stack::__construct()</a></dd>
 							<dt><b>__construct</b></dt>
 				<dd>in file ExceptionHandler.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_ExceptionHandler.html#method__construct">PHPExcel_Calculation_ExceptionHandler::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Register errorhandler</dd>
 							<dt><b>__construct</b></dt>
-				<dd>in file FormulaToken.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_FormulaToken.html#method__construct">PHPExcel_Calculation_FormulaToken::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Create a new PHPExcel_Calculation_FormulaToken</dd>
+				<dd>in file Function.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Function.html#method__construct">PHPExcel_Calculation_Function::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Create a new PHPExcel_Calculation_Function</dd>
 							<dt><b>__construct</b></dt>
 				<dd>in file FormulaParser.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_FormulaParser.html#method__construct">PHPExcel_Calculation_FormulaParser::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Create a new PHPExcel_Calculation_FormulaParser</dd>
-							<dt><b>__destruct</b></dt>
-				<dd>in file Calculation.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation.html#method__destruct">PHPExcel_Calculation::__destruct()</a></dd>
+							<dt><b>__construct</b></dt>
+				<dd>in file FormulaToken.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_FormulaToken.html#method__construct">PHPExcel_Calculation_FormulaToken::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Create a new PHPExcel_Calculation_FormulaToken</dd>
 							<dt><b>__destruct</b></dt>
 				<dd>in file ExceptionHandler.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_ExceptionHandler.html#method__destruct">PHPExcel_Calculation_ExceptionHandler::__destruct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Unregister errorhandler</dd>
+							<dt><b>__destruct</b></dt>
+				<dd>in file Calculation.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation.html#method__destruct">PHPExcel_Calculation::__destruct()</a></dd>
 					</dl>
 	</div>
 	<a href="elementindex_PHPExcel_Calculation.html#top">top</a><br>
@@ -211,9 +214,9 @@
 							<dt><b>acosh</b></dt>
 				<dd>in file Functions.php, function <a href="PHPExcel_Calculation/_PHPExcel---Calculation---Functions.php.html#functionacosh">acosh()</a></dd>
 							<dt><b>AMORDEGRC</b></dt>
-				<dd>in file Financial.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Financial.html#methodAMORDEGRC">PHPExcel_Calculation_Financial::AMORDEGRC()</a></dd>
+				<dd>in file Financial.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Financial.html#methodAMORDEGRC">PHPExcel_Calculation_Financial::AMORDEGRC()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;AMORDEGRC</dd>
 							<dt><b>AMORLINC</b></dt>
-				<dd>in file Financial.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Financial.html#methodAMORLINC">PHPExcel_Calculation_Financial::AMORLINC()</a></dd>
+				<dd>in file Financial.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Financial.html#methodAMORLINC">PHPExcel_Calculation_Financial::AMORLINC()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;AMORLINC</dd>
 							<dt><b>ASCIICODE</b></dt>
 				<dd>in file TextData.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_TextData.html#methodASCIICODE">PHPExcel_Calculation_TextData::ASCIICODE()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;ASCIICODE</dd>
 							<dt><b>asinh</b></dt>
@@ -279,7 +282,7 @@
 							<dt><b>$cyclicFormulaCount</b></dt>
 				<dd>in file Calculation.php, variable <a href="PHPExcel_Calculation/PHPExcel_Calculation.html#var$cyclicFormulaCount">PHPExcel_Calculation::$cyclicFormulaCount</a></dd>
 							<dt><b>calculate</b></dt>
-				<dd>in file Calculation.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation.html#methodcalculate">PHPExcel_Calculation::calculate()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Calculate cell value (using formula from a cell ID) 	Retained for backward compatibility</dd>
+				<dd>in file Calculation.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation.html#methodcalculate">PHPExcel_Calculation::calculate()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Calculate cell value (using formula from a cell ID)  Retained for backward compatibility</dd>
 							<dt><b>calculateCellValue</b></dt>
 				<dd>in file Calculation.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation.html#methodcalculateCellValue">PHPExcel_Calculation::calculateCellValue()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Calculate the value of a cell formula</dd>
 							<dt><b>calculateFormula</b></dt>
@@ -293,9 +296,9 @@
 							<dt><b>CALCULATION_REGEXP_FUNCTION</b></dt>
 				<dd>in file Calculation.php, class constant <a href="PHPExcel_Calculation/PHPExcel_Calculation.html#constCALCULATION_REGEXP_FUNCTION">PHPExcel_Calculation::CALCULATION_REGEXP_FUNCTION</a></dd>
 							<dt><b>CALCULATION_REGEXP_NAMEDRANGE</b></dt>
-				<dd>in file Calculation.php, class constant <a href="PHPExcel_Calculation/PHPExcel_Calculation.html#constCALCULATION_REGEXP_NAMEDRANGE">PHPExcel_Calculation::CALCULATION_REGEXP_NAMEDRANGE</a></dd>
-							<dt><b>CALCULATION_REGEXP_NAMEDRANGE</b></dt>
 				<dd>in file Calculation.php, constant <a href="PHPExcel_Calculation/_PHPExcel---Calculation.php.html#defineCALCULATION_REGEXP_NAMEDRANGE">CALCULATION_REGEXP_NAMEDRANGE</a></dd>
+							<dt><b>CALCULATION_REGEXP_NAMEDRANGE</b></dt>
+				<dd>in file Calculation.php, class constant <a href="PHPExcel_Calculation/PHPExcel_Calculation.html#constCALCULATION_REGEXP_NAMEDRANGE">PHPExcel_Calculation::CALCULATION_REGEXP_NAMEDRANGE</a></dd>
 							<dt><b>CALCULATION_REGEXP_NUMBER</b></dt>
 				<dd>in file Calculation.php, class constant <a href="PHPExcel_Calculation/PHPExcel_Calculation.html#constCALCULATION_REGEXP_NUMBER">PHPExcel_Calculation::CALCULATION_REGEXP_NUMBER</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Regular Expressions</dd>
 							<dt><b>CALCULATION_REGEXP_OPENBRACE</b></dt>
@@ -335,7 +338,7 @@
 							<dt><b>CHIINV</b></dt>
 				<dd>in file Statistical.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Statistical.html#methodCHIINV">PHPExcel_Calculation_Statistical::CHIINV()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;CHIINV</dd>
 							<dt><b>CHOOSE</b></dt>
-				<dd>in file LookupRef.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_LookupRef.html#methodCHOOSE">PHPExcel_Calculation_LookupRef::CHOOSE()</a></dd>
+				<dd>in file LookupRef.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_LookupRef.html#methodCHOOSE">PHPExcel_Calculation_LookupRef::CHOOSE()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;CHOOSE</dd>
 							<dt><b>clearCalculationCache</b></dt>
 				<dd>in file Calculation.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation.html#methodclearCalculationCache">PHPExcel_Calculation::clearCalculationCache()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Clear calculation cache</dd>
 							<dt><b>COLUMN</b></dt>
@@ -365,7 +368,7 @@
 							<dt><b>COUNT</b></dt>
 				<dd>in file Statistical.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Statistical.html#methodCOUNT">PHPExcel_Calculation_Statistical::COUNT()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;COUNT</dd>
 							<dt><b>count</b></dt>
-				<dd>in file Calculation.php, method <a href="PHPExcel_Calculation/PHPExcel_Token_Stack.html#methodcount">PHPExcel_Token_Stack::count()</a></dd>
+				<dd>in file Stack.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Token_Stack.html#methodcount">PHPExcel_Calculation_Token_Stack::count()</a></dd>
 							<dt><b>COUNTA</b></dt>
 				<dd>in file Statistical.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Statistical.html#methodCOUNTA">PHPExcel_Calculation_Statistical::COUNTA()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;COUNTA</dd>
 							<dt><b>COUNTBLANK</b></dt>
@@ -373,17 +376,17 @@
 							<dt><b>COUNTIF</b></dt>
 				<dd>in file Statistical.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Statistical.html#methodCOUNTIF">PHPExcel_Calculation_Statistical::COUNTIF()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;COUNTIF</dd>
 							<dt><b>COUPDAYBS</b></dt>
-				<dd>in file Financial.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Financial.html#methodCOUPDAYBS">PHPExcel_Calculation_Financial::COUPDAYBS()</a></dd>
+				<dd>in file Financial.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Financial.html#methodCOUPDAYBS">PHPExcel_Calculation_Financial::COUPDAYBS()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;COUPDAYBS</dd>
 							<dt><b>COUPDAYS</b></dt>
-				<dd>in file Financial.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Financial.html#methodCOUPDAYS">PHPExcel_Calculation_Financial::COUPDAYS()</a></dd>
+				<dd>in file Financial.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Financial.html#methodCOUPDAYS">PHPExcel_Calculation_Financial::COUPDAYS()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;COUPDAYS</dd>
 							<dt><b>COUPDAYSNC</b></dt>
-				<dd>in file Financial.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Financial.html#methodCOUPDAYSNC">PHPExcel_Calculation_Financial::COUPDAYSNC()</a></dd>
+				<dd>in file Financial.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Financial.html#methodCOUPDAYSNC">PHPExcel_Calculation_Financial::COUPDAYSNC()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;COUPDAYSNC</dd>
 							<dt><b>COUPNCD</b></dt>
-				<dd>in file Financial.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Financial.html#methodCOUPNCD">PHPExcel_Calculation_Financial::COUPNCD()</a></dd>
+				<dd>in file Financial.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Financial.html#methodCOUPNCD">PHPExcel_Calculation_Financial::COUPNCD()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;COUPNCD</dd>
 							<dt><b>COUPNUM</b></dt>
-				<dd>in file Financial.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Financial.html#methodCOUPNUM">PHPExcel_Calculation_Financial::COUPNUM()</a></dd>
+				<dd>in file Financial.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Financial.html#methodCOUPNUM">PHPExcel_Calculation_Financial::COUPNUM()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;COUPNUM</dd>
 							<dt><b>COUPPCD</b></dt>
-				<dd>in file Financial.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Financial.html#methodCOUPPCD">PHPExcel_Calculation_Financial::COUPPCD()</a></dd>
+				<dd>in file Financial.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Financial.html#methodCOUPPCD">PHPExcel_Calculation_Financial::COUPPCD()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;COUPPCD</dd>
 							<dt><b>COVAR</b></dt>
 				<dd>in file Statistical.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Statistical.html#methodCOVAR">PHPExcel_Calculation_Statistical::COVAR()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;COVAR</dd>
 							<dt><b>CRITBINOM</b></dt>
@@ -605,13 +608,13 @@
 							<dt><b>getCompatibilityMode</b></dt>
 				<dd>in file Functions.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Functions.html#methodgetCompatibilityMode">PHPExcel_Calculation_Functions::getCompatibilityMode()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Return the current Compatibility Mode</dd>
 							<dt><b>getConversionGroups</b></dt>
-				<dd>in file Engineering.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Engineering.html#methodgetConversionGroups">PHPExcel_Calculation_Engineering::getConversionGroups()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;getConversionGroups</dd>
+				<dd>in file Engineering.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Engineering.html#methodgetConversionGroups">PHPExcel_Calculation_Engineering::getConversionGroups()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;getConversionGroups 	Returns a list of the different conversion groups for UOM conversions</dd>
 							<dt><b>getConversionGroupUnitDetails</b></dt>
 				<dd>in file Engineering.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Engineering.html#methodgetConversionGroupUnitDetails">PHPExcel_Calculation_Engineering::getConversionGroupUnitDetails()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;getConversionGroupUnitDetails</dd>
 							<dt><b>getConversionGroupUnits</b></dt>
-				<dd>in file Engineering.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Engineering.html#methodgetConversionGroupUnits">PHPExcel_Calculation_Engineering::getConversionGroupUnits()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;getConversionGroupUnits</dd>
+				<dd>in file Engineering.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Engineering.html#methodgetConversionGroupUnits">PHPExcel_Calculation_Engineering::getConversionGroupUnits()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;getConversionGroupUnits 	Returns an array of units of measure, for a specified conversion group, or for all groups</dd>
 							<dt><b>getConversionMultipliers</b></dt>
-				<dd>in file Engineering.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Engineering.html#methodgetConversionMultipliers">PHPExcel_Calculation_Engineering::getConversionMultipliers()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;getConversionGroups</dd>
+				<dd>in file Engineering.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Engineering.html#methodgetConversionMultipliers">PHPExcel_Calculation_Engineering::getConversionMultipliers()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;getConversionMultipliers 	Returns an array of the Multiplier prefixes that can be used with Units of Measure in CONVERTUOM()</dd>
 							<dt><b>getExcelName</b></dt>
 				<dd>in file Function.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Function.html#methodgetExcelName">PHPExcel_Calculation_Function::getExcelName()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Get Excel name</dd>
 							<dt><b>getFALSE</b></dt>
@@ -773,7 +776,7 @@
 							<dt><b>LARGE</b></dt>
 				<dd>in file Statistical.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Statistical.html#methodLARGE">PHPExcel_Calculation_Statistical::LARGE()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;LARGE</dd>
 							<dt><b>last</b></dt>
-				<dd>in file Calculation.php, method <a href="PHPExcel_Calculation/PHPExcel_Token_Stack.html#methodlast">PHPExcel_Token_Stack::last()</a></dd>
+				<dd>in file Stack.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Token_Stack.html#methodlast">PHPExcel_Calculation_Token_Stack::last()</a></dd>
 							<dt><b>LCM</b></dt>
 				<dd>in file MathTrig.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_MathTrig.html#methodLCM">PHPExcel_Calculation_MathTrig::LCM()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;LCM</dd>
 							<dt><b>LEFT</b></dt>
@@ -980,14 +983,14 @@
 				<dd>in file Statistical.php, class <a href="PHPExcel_Calculation/PHPExcel_Calculation_Statistical.html">PHPExcel_Calculation_Statistical</a><br>&nbsp;&nbsp;&nbsp;&nbsp;PHPExcel_Calculation_Statistical</dd>
 							<dt><b>PHPExcel_Calculation_TextData</b></dt>
 				<dd>in file TextData.php, class <a href="PHPExcel_Calculation/PHPExcel_Calculation_TextData.html">PHPExcel_Calculation_TextData</a><br>&nbsp;&nbsp;&nbsp;&nbsp;PHPExcel_Calculation_TextData</dd>
-							<dt><b>PHPExcel_Token_Stack</b></dt>
-				<dd>in file Calculation.php, class <a href="PHPExcel_Calculation/PHPExcel_Token_Stack.html">PHPExcel_Token_Stack</a></dd>
+							<dt><b>PHPExcel_Calculation_Token_Stack</b></dt>
+				<dd>in file Stack.php, class <a href="PHPExcel_Calculation/PHPExcel_Calculation_Token_Stack.html">PHPExcel_Calculation_Token_Stack</a><br>&nbsp;&nbsp;&nbsp;&nbsp;PHPExcel</dd>
 							<dt><b>PMT</b></dt>
 				<dd>in file Financial.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Financial.html#methodPMT">PHPExcel_Calculation_Financial::PMT()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;PMT</dd>
 							<dt><b>POISSON</b></dt>
 				<dd>in file Statistical.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Statistical.html#methodPOISSON">PHPExcel_Calculation_Statistical::POISSON()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;POISSON</dd>
 							<dt><b>pop</b></dt>
-				<dd>in file Calculation.php, method <a href="PHPExcel_Calculation/PHPExcel_Token_Stack.html#methodpop">PHPExcel_Token_Stack::pop()</a></dd>
+				<dd>in file Stack.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Token_Stack.html#methodpop">PHPExcel_Calculation_Token_Stack::pop()</a></dd>
 							<dt><b>POWER</b></dt>
 				<dd>in file MathTrig.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_MathTrig.html#methodPOWER">PHPExcel_Calculation_MathTrig::POWER()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;POWER</dd>
 							<dt><b>PPMT</b></dt>
@@ -1005,7 +1008,7 @@
 							<dt><b>PROPERCASE</b></dt>
 				<dd>in file TextData.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_TextData.html#methodPROPERCASE">PHPExcel_Calculation_TextData::PROPERCASE()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;PROPERCASE</dd>
 							<dt><b>push</b></dt>
-				<dd>in file Calculation.php, method <a href="PHPExcel_Calculation/PHPExcel_Token_Stack.html#methodpush">PHPExcel_Token_Stack::push()</a></dd>
+				<dd>in file Stack.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Token_Stack.html#methodpush">PHPExcel_Calculation_Token_Stack::push()</a></dd>
 							<dt><b>PV</b></dt>
 				<dd>in file Financial.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_Financial.html#methodPV">PHPExcel_Calculation_Financial::PV()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;PV</dd>
 					</dl>
@@ -1086,6 +1089,8 @@
 				<dd>in file Calculation.php, variable <a href="PHPExcel_Calculation/PHPExcel_Calculation.html#var$suppressFormulaErrors">PHPExcel_Calculation::$suppressFormulaErrors</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Flag to determine how formula errors should be handled 		If true, then a user error will be triggered 		If false, then an exception will be thrown</dd>
 							<dt><b>Statistical.php</b></dt>
 				<dd>procedural page <a href="PHPExcel_Calculation/_PHPExcel---Calculation---Statistical.php.html">Statistical.php</a></dd>
+							<dt><b>Stack.php</b></dt>
+				<dd>procedural page <a href="PHPExcel_Calculation/_PHPExcel---Calculation---Token---Stack.php.html">Stack.php</a></dd>
 							<dt><b>SEARCHINSENSITIVE</b></dt>
 				<dd>in file TextData.php, method <a href="PHPExcel_Calculation/PHPExcel_Calculation_TextData.html#methodSEARCHINSENSITIVE">PHPExcel_Calculation_TextData::SEARCHINSENSITIVE()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;SEARCHINSENSITIVE</dd>
 							<dt><b>SEARCHSENSITIVE</b></dt>
@@ -1351,7 +1356,7 @@
 	<a href="elementindex_PHPExcel_Calculation.html#top">top</a><br>
         <div class="credit">
 		    <hr />
-		    Documentation generated on Sun, 27 Feb 2011 16:26:38 -0800 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+		    Documentation generated on Fri, 12 Oct 2012 00:15:04 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>

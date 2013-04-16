@@ -13,7 +13,7 @@
   <tr>
     <td class="header_menu">
         
-                                                                                                                                                                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                                                                                                                                                                                                
                                                                                                               		  [ <a href="../classtrees_PHPExcel_Worksheet.html" class="menu">class tree: PHPExcel_Worksheet</a> ]
 		  [ <a href="../elementindex_PHPExcel_Worksheet.html" class="menu">index: PHPExcel_Worksheet</a> ]
 		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
@@ -30,21 +30,22 @@
 	</div>
       <b>Packages:</b><br />
               <a href="../li_PHPExcel.html">PHPExcel</a><br />
-              <a href="../li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
               <a href="../li_JAMA.html">JAMA</a><br />
               <a href="../li_Math_Stats.html">Math_Stats</a><br />
               <a href="../li_PHPExcel_CachedObjectStorage.html">PHPExcel_CachedObjectStorage</a><br />
               <a href="../li_PHPExcel_Calculation.html">PHPExcel_Calculation</a><br />
               <a href="../li_PHPExcel_Cell.html">PHPExcel_Cell</a><br />
+              <a href="../li_PHPExcel_Chart.html">PHPExcel_Chart</a><br />
+              <a href="../li_PHPExcel_Chart_Renderer.html">PHPExcel_Chart_Renderer</a><br />
               <a href="../li_PHPExcel_Reader.html">PHPExcel_Reader</a><br />
               <a href="../li_PHPExcel_Reader_Excel5.html">PHPExcel_Reader_Excel5</a><br />
               <a href="../li_PHPExcel_Reader_Excel2007.html">PHPExcel_Reader_Excel2007</a><br />
               <a href="../li_PHPExcel_RichText.html">PHPExcel_RichText</a><br />
               <a href="../li_PHPExcel_Settings.html">PHPExcel_Settings</a><br />
               <a href="../li_PHPExcel_Shared.html">PHPExcel_Shared</a><br />
-              <a href="../li_PHPExcel_Shared_Best_Fit.html">PHPExcel_Shared_Best_Fit</a><br />
               <a href="../li_PHPExcel_Shared_Escher.html">PHPExcel_Shared_Escher</a><br />
               <a href="../li_PHPExcel_Shared_OLE.html">PHPExcel_Shared_OLE</a><br />
+              <a href="../li_PHPExcel_Shared_Trend.html">PHPExcel_Shared_Trend</a><br />
               <a href="../li_PHPExcel_Shared_ZipArchive.html">PHPExcel_Shared_ZipArchive</a><br />
               <a href="../li_PHPExcel_Style.html">PHPExcel_Style</a><br />
               <a href="../li_PHPExcel_Worksheet.html">PHPExcel_Worksheet</a><br />
@@ -55,9 +56,13 @@
             <br /><br />
                         <b>Files:</b><br />
       	  <div class="package">
+			<a href="../PHPExcel_Worksheet/_PHPExcel---Worksheet---AutoFilter.php.html">		AutoFilter.php
+		</a><br>
 			<a href="../PHPExcel_Worksheet/_PHPExcel---Worksheet---BaseDrawing.php.html">		BaseDrawing.php
 		</a><br>
 			<a href="../PHPExcel_Worksheet/_PHPExcel---Worksheet---CellIterator.php.html">		CellIterator.php
+		</a><br>
+			<a href="../PHPExcel_Worksheet/_PHPExcel---Worksheet---AutoFilter---Column.php.html">		Column.php
 		</a><br>
 			<a href="../PHPExcel_Worksheet/_PHPExcel---Worksheet---ColumnDimension.php.html">		ColumnDimension.php
 		</a><br>
@@ -79,6 +84,8 @@
 		</a><br>
 			<a href="../PHPExcel_Worksheet/_PHPExcel---Worksheet---RowIterator.php.html">		RowIterator.php
 		</a><br>
+			<a href="../PHPExcel_Worksheet/_PHPExcel---Worksheet---AutoFilter---Column---Rule.php.html">		Rule.php
+		</a><br>
 			<a href="../PHPExcel_Worksheet/_PHPExcel---Worksheet---SheetView.php.html">		SheetView.php
 		</a><br>
 			<a href="../PHPExcel_Worksheet/_PHPExcel---Worksheet.php.html">		Worksheet.php
@@ -89,6 +96,9 @@
             <b>Classes:</b><br />
         <div class="package">
 		    		<a href="../PHPExcel_Worksheet/PHPExcel_Worksheet.html">PHPExcel_Worksheet</a><br />
+	    		<a href="../PHPExcel_Worksheet/PHPExcel_Worksheet_AutoFilter.html">PHPExcel_Worksheet_AutoFilter</a><br />
+	    		<a href="../PHPExcel_Worksheet/PHPExcel_Worksheet_AutoFilter_Column.html">PHPExcel_Worksheet_AutoFilter_Column</a><br />
+	    		<a href="../PHPExcel_Worksheet/PHPExcel_Worksheet_AutoFilter_Column_Rule.html">PHPExcel_Worksheet_AutoFilter_Column_Rule</a><br />
 	    		<a href="../PHPExcel_Worksheet/PHPExcel_Worksheet_BaseDrawing.html">PHPExcel_Worksheet_BaseDrawing</a><br />
 	    		<a href="../PHPExcel_Worksheet/PHPExcel_Worksheet_CellIterator.html">PHPExcel_Worksheet_CellIterator</a><br />
 	    		<a href="../PHPExcel_Worksheet/PHPExcel_Worksheet_ColumnDimension.html">PHPExcel_Worksheet_ColumnDimension</a><br />
@@ -131,7 +141,7 @@ Source Location: /PHPExcel/Worksheet/MemoryDrawing.php<br /><br />
 
 <h4>Copyright:</h4>
 <ul>
-  <li>Copyright (c) 2006 - 2011 PHPExcel (http://www.codeplex.com/PHPExcel)</li>
+  <li>Copyright (c) 2006 - 2012 PHPExcel (http://www.codeplex.com/PHPExcel)</li>
 </ul>
                 <p class="implements">
             Implements interfaces:
@@ -432,13 +442,13 @@ Source Location: /PHPExcel/Worksheet/MemoryDrawing.php<br /><br />
 <a name="class_details"></a>
 <h3>Class Details</h3>
 <div class="tags">
-[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetMemoryDrawing.php.html#a36">36</a>]<br />
+[line 36]<br />
 PHPExcel_Worksheet_MemoryDrawing<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>Copyright (c) 2006 - 2011 PHPExcel (http://www.codeplex.com/PHPExcel)</td>
+    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>Copyright (c) 2006 - 2012 PHPExcel (http://www.codeplex.com/PHPExcel)</td>
   </tr>
 </table>
 </div>
@@ -453,7 +463,7 @@ PHPExcel_Worksheet_MemoryDrawing<br /><br /><br /><br />
 
   <hr />
 	<a name="methodgetHashCode"></a>
-	<h3>method getHashCode <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetMemoryDrawing.php.html#a177">177</a>]</span></h3>
+	<h3>method getHashCode <span class="smalllinenumber">[line 177]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -481,7 +491,7 @@ PHPExcel_Worksheet_MemoryDrawing<br /><br /><br /><br />
   </div>
   <hr />
 	<a name="methodgetImageResource"></a>
-	<h3>method getImageResource <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetMemoryDrawing.php.html#a98">98</a>]</span></h3>
+	<h3>method getImageResource <span class="smalllinenumber">[line 98]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -506,7 +516,7 @@ PHPExcel_Worksheet_MemoryDrawing<br /><br /><br /><br />
   </div>
   <hr />
 	<a name="methodgetIndexedFilename"></a>
-	<h3>method getIndexedFilename <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetMemoryDrawing.php.html#a164">164</a>]</span></h3>
+	<h3>method getIndexedFilename <span class="smalllinenumber">[line 164]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -531,7 +541,7 @@ PHPExcel_Worksheet_MemoryDrawing<br /><br /><br /><br />
   </div>
   <hr />
 	<a name="methodgetMimeType"></a>
-	<h3>method getMimeType <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetMemoryDrawing.php.html#a144">144</a>]</span></h3>
+	<h3>method getMimeType <span class="smalllinenumber">[line 144]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -556,7 +566,7 @@ PHPExcel_Worksheet_MemoryDrawing<br /><br /><br /><br />
   </div>
   <hr />
 	<a name="methodgetRenderingFunction"></a>
-	<h3>method getRenderingFunction <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetMemoryDrawing.php.html#a124">124</a>]</span></h3>
+	<h3>method getRenderingFunction <span class="smalllinenumber">[line 124]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -581,7 +591,7 @@ PHPExcel_Worksheet_MemoryDrawing<br /><br /><br /><br />
   </div>
   <hr />
 	<a name="method__construct"></a>
-	<h3>constructor __construct <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetMemoryDrawing.php.html#a81">81</a>]</span></h3>
+	<h3>constructor __construct <span class="smalllinenumber">[line 81]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -606,7 +616,7 @@ PHPExcel_Worksheet_MemoryDrawing<br /><br /><br /><br />
   </div>
   <hr />
 	<a name="methodsetImageResource"></a>
-	<h3>method setImageResource <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetMemoryDrawing.php.html#a108">108</a>]</span></h3>
+	<h3>method setImageResource <span class="smalllinenumber">[line 108]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -642,7 +652,7 @@ $value = null])</code>
   </div>
   <hr />
 	<a name="methodsetMimeType"></a>
-	<h3>method setMimeType <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetMemoryDrawing.php.html#a154">154</a>]</span></h3>
+	<h3>method setMimeType <span class="smalllinenumber">[line 154]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -678,7 +688,7 @@ $value = PHPExcel_Worksheet_MemoryDrawing::MIMETYPE_DEFAULT])</code>
   </div>
   <hr />
 	<a name="methodsetRenderingFunction"></a>
-	<h3>method setRenderingFunction <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetMemoryDrawing.php.html#a134">134</a>]</span></h3>
+	<h3>method setRenderingFunction <span class="smalllinenumber">[line 134]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -714,7 +724,7 @@ $value = PHPExcel_Worksheet_MemoryDrawing::RENDERING_DEFAULT])</code>
   </div>
   <hr />
 	<a name="method__clone"></a>
-	<h3>method __clone <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetMemoryDrawing.php.html#a190">190</a>]</span></h3>
+	<h3>method __clone <span class="smalllinenumber">[line 190]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -746,56 +756,56 @@ $value = PHPExcel_Worksheet_MemoryDrawing::RENDERING_DEFAULT])</code>
 	<a name="constMIMETYPE_DEFAULT"></a>
 	<p></p>
 	<h4>MIMETYPE_DEFAULT = <span class="value">&nbsp;'image/png'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetMemoryDrawing.php.html#a45">45</a>]</p>
+	<p>[line 45]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constMIMETYPE_GIF"></a>
 	<p></p>
 	<h4>MIMETYPE_GIF = <span class="value">&nbsp;'image/gif'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetMemoryDrawing.php.html#a47">47</a>]</p>
+	<p>[line 47]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constMIMETYPE_JPEG"></a>
 	<p></p>
 	<h4>MIMETYPE_JPEG = <span class="value">&nbsp;'image/jpeg'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetMemoryDrawing.php.html#a48">48</a>]</p>
+	<p>[line 48]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constMIMETYPE_PNG"></a>
 	<p></p>
 	<h4>MIMETYPE_PNG = <span class="value">&nbsp;'image/png'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetMemoryDrawing.php.html#a46">46</a>]</p>
+	<p>[line 46]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constRENDERING_DEFAULT"></a>
 	<p></p>
 	<h4>RENDERING_DEFAULT = <span class="value">&nbsp;'imagepng'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetMemoryDrawing.php.html#a39">39</a>]</p>
+	<p>[line 39]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constRENDERING_GIF"></a>
 	<p></p>
 	<h4>RENDERING_GIF = <span class="value">&nbsp;'imagegif'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetMemoryDrawing.php.html#a41">41</a>]</p>
+	<p>[line 41]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constRENDERING_JPEG"></a>
 	<p></p>
 	<h4>RENDERING_JPEG = <span class="value">&nbsp;'imagejpeg'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetMemoryDrawing.php.html#a42">42</a>]</p>
+	<p>[line 42]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constRENDERING_PNG"></a>
 	<p></p>
 	<h4>RENDERING_PNG = <span class="value">&nbsp;'imagepng'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Worksheet__PHPExcelWorksheetMemoryDrawing.php.html#a40">40</a>]</p>
+	<p>[line 40]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
@@ -803,7 +813,7 @@ $value = PHPExcel_Worksheet_MemoryDrawing::RENDERING_DEFAULT])</code>
 
         <div class="credit">
 		    <hr />
-		    Documentation generated on Sun, 27 Feb 2011 16:32:47 -0800 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+		    Documentation generated on Fri, 12 Oct 2012 00:16:42 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>

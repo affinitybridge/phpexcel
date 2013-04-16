@@ -13,7 +13,7 @@
   <tr>
     <td class="header_menu">
         
-                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                   		  [ <a href="../classtrees_PHPExcel_Style.html" class="menu">class tree: PHPExcel_Style</a> ]
 		  [ <a href="../elementindex_PHPExcel_Style.html" class="menu">index: PHPExcel_Style</a> ]
 		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
@@ -30,21 +30,22 @@
 	</div>
       <b>Packages:</b><br />
               <a href="../li_PHPExcel.html">PHPExcel</a><br />
-              <a href="../li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
               <a href="../li_JAMA.html">JAMA</a><br />
               <a href="../li_Math_Stats.html">Math_Stats</a><br />
               <a href="../li_PHPExcel_CachedObjectStorage.html">PHPExcel_CachedObjectStorage</a><br />
               <a href="../li_PHPExcel_Calculation.html">PHPExcel_Calculation</a><br />
               <a href="../li_PHPExcel_Cell.html">PHPExcel_Cell</a><br />
+              <a href="../li_PHPExcel_Chart.html">PHPExcel_Chart</a><br />
+              <a href="../li_PHPExcel_Chart_Renderer.html">PHPExcel_Chart_Renderer</a><br />
               <a href="../li_PHPExcel_Reader.html">PHPExcel_Reader</a><br />
               <a href="../li_PHPExcel_Reader_Excel5.html">PHPExcel_Reader_Excel5</a><br />
               <a href="../li_PHPExcel_Reader_Excel2007.html">PHPExcel_Reader_Excel2007</a><br />
               <a href="../li_PHPExcel_RichText.html">PHPExcel_RichText</a><br />
               <a href="../li_PHPExcel_Settings.html">PHPExcel_Settings</a><br />
               <a href="../li_PHPExcel_Shared.html">PHPExcel_Shared</a><br />
-              <a href="../li_PHPExcel_Shared_Best_Fit.html">PHPExcel_Shared_Best_Fit</a><br />
               <a href="../li_PHPExcel_Shared_Escher.html">PHPExcel_Shared_Escher</a><br />
               <a href="../li_PHPExcel_Shared_OLE.html">PHPExcel_Shared_OLE</a><br />
+              <a href="../li_PHPExcel_Shared_Trend.html">PHPExcel_Shared_Trend</a><br />
               <a href="../li_PHPExcel_Shared_ZipArchive.html">PHPExcel_Shared_ZipArchive</a><br />
               <a href="../li_PHPExcel_Style.html">PHPExcel_Style</a><br />
               <a href="../li_PHPExcel_Worksheet.html">PHPExcel_Worksheet</a><br />
@@ -117,7 +118,7 @@ Source Location: /PHPExcel/Style/Fill.php<br /><br />
 
 <h4>Copyright:</h4>
 <ul>
-  <li>Copyright (c) 2006 - 2011 PHPExcel (http://www.codeplex.com/PHPExcel)</li>
+  <li>Copyright (c) 2006 - 2012 PHPExcel (http://www.codeplex.com/PHPExcel)</li>
 </ul>
                 <p class="implements">
             Implements interfaces:
@@ -196,13 +197,13 @@ Source Location: /PHPExcel/Style/Fill.php<br /><br />
 <a name="class_details"></a>
 <h3>Class Details</h3>
 <div class="tags">
-[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a36">36</a>]<br />
+[line 36]<br />
 PHPExcel_Style_Fill<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>Copyright (c) 2006 - 2011 PHPExcel (http://www.codeplex.com/PHPExcel)</td>
+    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>Copyright (c) 2006 - 2012 PHPExcel (http://www.codeplex.com/PHPExcel)</td>
   </tr>
 </table>
 </div>
@@ -217,13 +218,14 @@ PHPExcel_Style_Fill<br /><br /><br /><br />
 
   <hr />
 	<a name="method__construct"></a>
-	<h3>constructor __construct <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a113">113</a>]</span></h3>
+	<h3>constructor __construct <span class="smalllinenumber">[line 120]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
 		<code>PHPExcel_Style_Fill __construct(
-[
-$isSupervisor = false])</code>
+[boolean
+$isSupervisor = false], [boolean
+$isConditional = false])</code>
     </td></tr></table>
     </td></tr></table><br />
 	
@@ -243,9 +245,14 @@ $isSupervisor = false])</code>
     <div class="tags">
     <table border="0" cellspacing="0" cellpadding="0">
           <tr>
-        <td class="type">&nbsp;&nbsp;</td>
+        <td class="type">boolean&nbsp;&nbsp;</td>
         <td><b>$isSupervisor</b>&nbsp;&nbsp;</td>
-        <td></td>
+        <td>Flag indicating if this is a supervisor or not                                     Leave this value at default unless you understand exactly what                                         its ramifications are</td>
+      </tr>
+          <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$isConditional</b>&nbsp;&nbsp;</td>
+        <td>Flag indicating if this is a conditional style or not                                     Leave this value at default unless you understand exactly what                                         its ramifications are</td>
       </tr>
         </table>
     </div><br />
@@ -253,7 +260,7 @@ $isSupervisor = false])</code>
   </div>
   <hr />
 	<a name="methodapplyFromArray"></a>
-	<h3>method applyFromArray <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a227">227</a>]</span></h3>
+	<h3>method applyFromArray <span class="smalllinenumber">[line 237]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -304,7 +311,7 @@ $pStyles = null])</code>
   </div>
   <hr />
 	<a name="methodbindParent"></a>
-	<h3>method bindParent <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a135">135</a>]</span></h3>
+	<h3>method bindParent <span class="smalllinenumber">[line 145]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -340,7 +347,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetActiveCell"></a>
-	<h3>method getActiveCell <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a189">189</a>]</span></h3>
+	<h3>method getActiveCell <span class="smalllinenumber">[line 199]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -368,7 +375,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetActiveSheet"></a>
-	<h3>method getActiveSheet <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a167">167</a>]</span></h3>
+	<h3>method getActiveSheet <span class="smalllinenumber">[line 177]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -393,7 +400,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetEndColor"></a>
-	<h3>method getEndColor <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a344">344</a>]</span></h3>
+	<h3>method getEndColor <span class="smalllinenumber">[line 354]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -418,7 +425,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetFillType"></a>
-	<h3>method getFillType <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a259">259</a>]</span></h3>
+	<h3>method getFillType <span class="smalllinenumber">[line 269]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -443,7 +450,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetHashCode"></a>
-	<h3>method getHashCode <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a373">373</a>]</span></h3>
+	<h3>method getHashCode <span class="smalllinenumber">[line 383]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -471,7 +478,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetIsSupervisor"></a>
-	<h3>method getIsSupervisor <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a146">146</a>]</span></h3>
+	<h3>method getIsSupervisor <span class="smalllinenumber">[line 156]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -496,7 +503,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetRotation"></a>
-	<h3>method getRotation <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a287">287</a>]</span></h3>
+	<h3>method getRotation <span class="smalllinenumber">[line 297]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -521,7 +528,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetSelectedCells"></a>
-	<h3>method getSelectedCells <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a178">178</a>]</span></h3>
+	<h3>method getSelectedCells <span class="smalllinenumber">[line 188]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -549,7 +556,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetSharedComponent"></a>
-	<h3>method getSharedComponent <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a157">157</a>]</span></h3>
+	<h3>method getSharedComponent <span class="smalllinenumber">[line 167]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -574,7 +581,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetStartColor"></a>
-	<h3>method getStartColor <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a315">315</a>]</span></h3>
+	<h3>method getStartColor <span class="smalllinenumber">[line 325]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -599,7 +606,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetStyleArray"></a>
-	<h3>method getStyleArray <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a200">200</a>]</span></h3>
+	<h3>method getStyleArray <span class="smalllinenumber">[line 210]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -635,7 +642,7 @@ $array)</code>
   </div>
   <hr />
 	<a name="methodsetEndColor"></a>
-	<h3>method setEndColor <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a355">355</a>]</span></h3>
+	<h3>method setEndColor <span class="smalllinenumber">[line 365]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -674,7 +681,7 @@ $pValue = null])</code>
   </div>
   <hr />
 	<a name="methodsetFillType"></a>
-	<h3>method setFillType <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a272">272</a>]</span></h3>
+	<h3>method setFillType <span class="smalllinenumber">[line 282]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -710,7 +717,7 @@ $pValue = PHPExcel_Style_Fill::FILL_NONE])</code>
   </div>
   <hr />
 	<a name="methodsetRotation"></a>
-	<h3>method setRotation <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a300">300</a>]</span></h3>
+	<h3>method setRotation <span class="smalllinenumber">[line 310]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -746,7 +753,7 @@ $pValue = 0])</code>
   </div>
   <hr />
 	<a name="methodsetStartColor"></a>
-	<h3>method setStartColor <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a326">326</a>]</span></h3>
+	<h3>method setStartColor <span class="smalllinenumber">[line 336]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -785,7 +792,7 @@ $pValue = null])</code>
   </div>
   <hr />
 	<a name="method__clone"></a>
-	<h3>method __clone <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a389">389</a>]</span></h3>
+	<h3>method __clone <span class="smalllinenumber">[line 399]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -817,147 +824,147 @@ $pValue = null])</code>
 	<a name="constFILL_GRADIENT_LINEAR"></a>
 	<p></p>
 	<h4>FILL_GRADIENT_LINEAR = <span class="value">&nbsp;'linear'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a41">41</a>]</p>
+	<p>[line 41]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constFILL_GRADIENT_PATH"></a>
 	<p></p>
 	<h4>FILL_GRADIENT_PATH = <span class="value">&nbsp;'path'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a42">42</a>]</p>
+	<p>[line 42]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constFILL_NONE"></a>
 	<p></p>
 	<h4>FILL_NONE = <span class="value">&nbsp;'none'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a39">39</a>]</p>
+	<p>[line 39]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constFILL_PATTERN_DARKDOWN"></a>
 	<p></p>
 	<h4>FILL_PATTERN_DARKDOWN = <span class="value">&nbsp;'darkDown'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a43">43</a>]</p>
+	<p>[line 43]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constFILL_PATTERN_DARKGRAY"></a>
 	<p></p>
 	<h4>FILL_PATTERN_DARKGRAY = <span class="value">&nbsp;'darkGray'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a44">44</a>]</p>
+	<p>[line 44]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constFILL_PATTERN_DARKGRID"></a>
 	<p></p>
 	<h4>FILL_PATTERN_DARKGRID = <span class="value">&nbsp;'darkGrid'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a45">45</a>]</p>
+	<p>[line 45]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constFILL_PATTERN_DARKHORIZONTAL"></a>
 	<p></p>
 	<h4>FILL_PATTERN_DARKHORIZONTAL = <span class="value">&nbsp;'darkHorizontal'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a46">46</a>]</p>
+	<p>[line 46]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constFILL_PATTERN_DARKTRELLIS"></a>
 	<p></p>
 	<h4>FILL_PATTERN_DARKTRELLIS = <span class="value">&nbsp;'darkTrellis'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a47">47</a>]</p>
+	<p>[line 47]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constFILL_PATTERN_DARKUP"></a>
 	<p></p>
 	<h4>FILL_PATTERN_DARKUP = <span class="value">&nbsp;'darkUp'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a48">48</a>]</p>
+	<p>[line 48]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constFILL_PATTERN_DARKVERTICAL"></a>
 	<p></p>
 	<h4>FILL_PATTERN_DARKVERTICAL = <span class="value">&nbsp;'darkVertical'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a49">49</a>]</p>
+	<p>[line 49]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constFILL_PATTERN_GRAY0625"></a>
 	<p></p>
 	<h4>FILL_PATTERN_GRAY0625 = <span class="value">&nbsp;'gray0625'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a50">50</a>]</p>
+	<p>[line 50]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constFILL_PATTERN_GRAY125"></a>
 	<p></p>
 	<h4>FILL_PATTERN_GRAY125 = <span class="value">&nbsp;'gray125'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a51">51</a>]</p>
+	<p>[line 51]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constFILL_PATTERN_LIGHTDOWN"></a>
 	<p></p>
 	<h4>FILL_PATTERN_LIGHTDOWN = <span class="value">&nbsp;'lightDown'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a52">52</a>]</p>
+	<p>[line 52]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constFILL_PATTERN_LIGHTGRAY"></a>
 	<p></p>
 	<h4>FILL_PATTERN_LIGHTGRAY = <span class="value">&nbsp;'lightGray'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a53">53</a>]</p>
+	<p>[line 53]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constFILL_PATTERN_LIGHTGRID"></a>
 	<p></p>
 	<h4>FILL_PATTERN_LIGHTGRID = <span class="value">&nbsp;'lightGrid'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a54">54</a>]</p>
+	<p>[line 54]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constFILL_PATTERN_LIGHTHORIZONTAL"></a>
 	<p></p>
 	<h4>FILL_PATTERN_LIGHTHORIZONTAL = <span class="value">&nbsp;'lightHorizontal'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a55">55</a>]</p>
+	<p>[line 55]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constFILL_PATTERN_LIGHTTRELLIS"></a>
 	<p></p>
 	<h4>FILL_PATTERN_LIGHTTRELLIS = <span class="value">&nbsp;'lightTrellis'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a56">56</a>]</p>
+	<p>[line 56]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constFILL_PATTERN_LIGHTUP"></a>
 	<p></p>
 	<h4>FILL_PATTERN_LIGHTUP = <span class="value">&nbsp;'lightUp'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a57">57</a>]</p>
+	<p>[line 57]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constFILL_PATTERN_LIGHTVERTICAL"></a>
 	<p></p>
 	<h4>FILL_PATTERN_LIGHTVERTICAL = <span class="value">&nbsp;'lightVertical'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a58">58</a>]</p>
+	<p>[line 58]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constFILL_PATTERN_MEDIUMGRAY"></a>
 	<p></p>
 	<h4>FILL_PATTERN_MEDIUMGRAY = <span class="value">&nbsp;'mediumGray'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a59">59</a>]</p>
+	<p>[line 59]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constFILL_SOLID"></a>
 	<p></p>
 	<h4>FILL_SOLID = <span class="value">&nbsp;'solid'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFill.php.html#a40">40</a>]</p>
+	<p>[line 40]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
@@ -965,7 +972,7 @@ $pValue = null])</code>
 
         <div class="credit">
 		    <hr />
-		    Documentation generated on Sun, 27 Feb 2011 16:31:32 -0800 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+		    Documentation generated on Fri, 12 Oct 2012 00:16:15 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>

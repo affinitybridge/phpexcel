@@ -2,7 +2,7 @@
 /**
  * PHPExcel
  *
- * Copyright (C) 2006 - 2011 PHPExcel
+ * Copyright (C) 2006 - 2012 PHPExcel
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,30 +20,40 @@
  *
  * @category   PHPExcel
  * @package    PHPExcel
- * @copyright  Copyright (c) 2006 - 2011 PHPExcel (http://www.codeplex.com/PHPExcel)
+ * @copyright  Copyright (c) 2006 - 2012 PHPExcel (http://www.codeplex.com/PHPExcel)
  * @license    http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt	LGPL
- * @version    1.7.6, 2011-02-27
+ * @version    1.7.8, 2012-10-12
  */
 
 /** Error reporting */
 error_reporting(E_ALL);
 
+if (PHP_SAPI != 'cli') {
+	die ('This script executes all tests, and should only be run from the command line');
+}
+
 // List of tests
 $aTests = array(
 	  '01simple.php'
 	, '02types.php'
+	, '02types-xls.php'
 	, '03formulas.php'
 	, '04printing.php'
 	, '05featuredemo.php'
 	, '06largescale.php'
+	, '06largescale-xls.php'
 	, '07reader.php'
 	, '08conditionalformatting.php'
 	, '09pagebreaks.php'
 	, '10autofilter.php'
+	, '10autofilter-selection-1.php'
+	, '10autofilter-selection-2.php'
 	, '11documentsecurity.php'
+	, '11documentsecurity-xls.php'
 	, '13calculation.php'
 	, '14excel5.php'
 	, '15datavalidation.php'
+	, '15datavalidation-xls.php'
 	, '16csv.php'
 	, '17html.php'
 	, '18extendedcalculation.php'
@@ -59,6 +69,16 @@ $aTests = array(
 	, '28iterator.php'
 	, '29advancedvaluebinder.php'
 	, '30template.php'
+	, '31docproperties_write.php'
+	, '31docproperties_write-xls.php'
+	, '32chartreadwrite.php'
+	, '33chartcreate-area.php'
+	, '33chartcreate-bar.php'
+	, '33chartcreate-bar-stacked.php'
+	, '33chartcreate-column.php'
+	, '33chartcreate-column-2.php'
+	, '33chartcreate-line.php'
+	, '34chartupdate.php'
 	, 'OOCalcReader.php'
 	, 'SylkReader.php'
 	, 'Excel2003XMLReader.php'

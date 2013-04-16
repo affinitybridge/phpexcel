@@ -13,7 +13,7 @@
   <tr>
     <td class="header_menu">
         
-                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                   		  [ <a href="../classtrees_PHPExcel_Style.html" class="menu">class tree: PHPExcel_Style</a> ]
 		  [ <a href="../elementindex_PHPExcel_Style.html" class="menu">index: PHPExcel_Style</a> ]
 		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
@@ -30,21 +30,22 @@
 	</div>
       <b>Packages:</b><br />
               <a href="../li_PHPExcel.html">PHPExcel</a><br />
-              <a href="../li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
               <a href="../li_JAMA.html">JAMA</a><br />
               <a href="../li_Math_Stats.html">Math_Stats</a><br />
               <a href="../li_PHPExcel_CachedObjectStorage.html">PHPExcel_CachedObjectStorage</a><br />
               <a href="../li_PHPExcel_Calculation.html">PHPExcel_Calculation</a><br />
               <a href="../li_PHPExcel_Cell.html">PHPExcel_Cell</a><br />
+              <a href="../li_PHPExcel_Chart.html">PHPExcel_Chart</a><br />
+              <a href="../li_PHPExcel_Chart_Renderer.html">PHPExcel_Chart_Renderer</a><br />
               <a href="../li_PHPExcel_Reader.html">PHPExcel_Reader</a><br />
               <a href="../li_PHPExcel_Reader_Excel5.html">PHPExcel_Reader_Excel5</a><br />
               <a href="../li_PHPExcel_Reader_Excel2007.html">PHPExcel_Reader_Excel2007</a><br />
               <a href="../li_PHPExcel_RichText.html">PHPExcel_RichText</a><br />
               <a href="../li_PHPExcel_Settings.html">PHPExcel_Settings</a><br />
               <a href="../li_PHPExcel_Shared.html">PHPExcel_Shared</a><br />
-              <a href="../li_PHPExcel_Shared_Best_Fit.html">PHPExcel_Shared_Best_Fit</a><br />
               <a href="../li_PHPExcel_Shared_Escher.html">PHPExcel_Shared_Escher</a><br />
               <a href="../li_PHPExcel_Shared_OLE.html">PHPExcel_Shared_OLE</a><br />
+              <a href="../li_PHPExcel_Shared_Trend.html">PHPExcel_Shared_Trend</a><br />
               <a href="../li_PHPExcel_Shared_ZipArchive.html">PHPExcel_Shared_ZipArchive</a><br />
               <a href="../li_PHPExcel_Style.html">PHPExcel_Style</a><br />
               <a href="../li_PHPExcel_Worksheet.html">PHPExcel_Worksheet</a><br />
@@ -117,7 +118,7 @@ Source Location: /PHPExcel/Style/Font.php<br /><br />
 
 <h4>Copyright:</h4>
 <ul>
-  <li>Copyright (c) 2006 - 2011 PHPExcel (http://www.codeplex.com/PHPExcel)</li>
+  <li>Copyright (c) 2006 - 2012 PHPExcel (http://www.codeplex.com/PHPExcel)</li>
 </ul>
                 <p class="implements">
             Implements interfaces:
@@ -192,13 +193,13 @@ Source Location: /PHPExcel/Style/Font.php<br /><br />
 <a name="class_details"></a>
 <h3>Class Details</h3>
 <div class="tags">
-[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a36">36</a>]<br />
+[line 36]<br />
 PHPExcel_Style_Font<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>Copyright (c) 2006 - 2011 PHPExcel (http://www.codeplex.com/PHPExcel)</td>
+    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>Copyright (c) 2006 - 2012 PHPExcel (http://www.codeplex.com/PHPExcel)</td>
   </tr>
 </table>
 </div>
@@ -213,13 +214,14 @@ PHPExcel_Style_Font<br /><br /><br /><br />
 
   <hr />
 	<a name="method__construct"></a>
-	<h3>constructor __construct <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a132">132</a>]</span></h3>
+	<h3>constructor __construct <span class="smalllinenumber">[line 139]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
 		<code>PHPExcel_Style_Font __construct(
-[
-$isSupervisor = false])</code>
+[boolean
+$isSupervisor = false], [boolean
+$isConditional = false])</code>
     </td></tr></table>
     </td></tr></table><br />
 	
@@ -239,9 +241,14 @@ $isSupervisor = false])</code>
     <div class="tags">
     <table border="0" cellspacing="0" cellpadding="0">
           <tr>
-        <td class="type">&nbsp;&nbsp;</td>
+        <td class="type">boolean&nbsp;&nbsp;</td>
         <td><b>$isSupervisor</b>&nbsp;&nbsp;</td>
-        <td></td>
+        <td>Flag indicating if this is a supervisor or not                                     Leave this value at default unless you understand exactly what                                         its ramifications are</td>
+      </tr>
+          <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$isConditional</b>&nbsp;&nbsp;</td>
+        <td>Flag indicating if this is a conditional style or not                                     Leave this value at default unless you understand exactly what                                         its ramifications are</td>
       </tr>
         </table>
     </div><br />
@@ -249,7 +256,7 @@ $isSupervisor = false])</code>
   </div>
   <hr />
 	<a name="methodapplyFromArray"></a>
-	<h3>method applyFromArray <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a243">243</a>]</span></h3>
+	<h3>method applyFromArray <span class="smalllinenumber">[line 261]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -300,7 +307,7 @@ $pStyles = null])</code>
   </div>
   <hr />
 	<a name="methodbindParent"></a>
-	<h3>method bindParent <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a152">152</a>]</span></h3>
+	<h3>method bindParent <span class="smalllinenumber">[line 170]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -336,7 +343,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetActiveCell"></a>
-	<h3>method getActiveCell <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a205">205</a>]</span></h3>
+	<h3>method getActiveCell <span class="smalllinenumber">[line 223]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -364,7 +371,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetActiveSheet"></a>
-	<h3>method getActiveSheet <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a183">183</a>]</span></h3>
+	<h3>method getActiveSheet <span class="smalllinenumber">[line 201]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -389,7 +396,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetBold"></a>
-	<h3>method getBold <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a349">349</a>]</span></h3>
+	<h3>method getBold <span class="smalllinenumber">[line 367]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -414,7 +421,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetColor"></a>
-	<h3>method getColor <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a558">558</a>]</span></h3>
+	<h3>method getColor <span class="smalllinenumber">[line 580]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -439,7 +446,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetHashCode"></a>
-	<h3>method getHashCode <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a587">587</a>]</span></h3>
+	<h3>method getHashCode <span class="smalllinenumber">[line 609]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -467,7 +474,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetIsSupervisor"></a>
-	<h3>method getIsSupervisor <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a162">162</a>]</span></h3>
+	<h3>method getIsSupervisor <span class="smalllinenumber">[line 180]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -492,7 +499,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetItalic"></a>
-	<h3>method getItalic <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a380">380</a>]</span></h3>
+	<h3>method getItalic <span class="smalllinenumber">[line 398]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -517,7 +524,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetName"></a>
-	<h3>method getName <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a287">287</a>]</span></h3>
+	<h3>method getName <span class="smalllinenumber">[line 305]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -542,7 +549,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetSelectedCells"></a>
-	<h3>method getSelectedCells <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a194">194</a>]</span></h3>
+	<h3>method getSelectedCells <span class="smalllinenumber">[line 212]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -570,7 +577,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetSharedComponent"></a>
-	<h3>method getSharedComponent <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a173">173</a>]</span></h3>
+	<h3>method getSharedComponent <span class="smalllinenumber">[line 191]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -595,7 +602,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetSize"></a>
-	<h3>method getSize <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a318">318</a>]</span></h3>
+	<h3>method getSize <span class="smalllinenumber">[line 336]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -620,7 +627,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetStrikethrough"></a>
-	<h3>method getStrikethrough <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a527">527</a>]</span></h3>
+	<h3>method getStrikethrough <span class="smalllinenumber">[line 549]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -645,7 +652,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetStriketrough"></a>
-	<h3>method getStriketrough <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a507">507</a>]</span></h3>
+	<h3>method getStriketrough <span class="smalllinenumber">[line 529]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -673,7 +680,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetStyleArray"></a>
-	<h3>method getStyleArray <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a216">216</a>]</span></h3>
+	<h3>method getStyleArray <span class="smalllinenumber">[line 234]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -709,7 +716,7 @@ $array)</code>
   </div>
   <hr />
 	<a name="methodgetSubScript"></a>
-	<h3>method getSubScript <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a443">443</a>]</span></h3>
+	<h3>method getSubScript <span class="smalllinenumber">[line 461]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -734,7 +741,7 @@ $array)</code>
   </div>
   <hr />
 	<a name="methodgetSuperScript"></a>
-	<h3>method getSuperScript <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a411">411</a>]</span></h3>
+	<h3>method getSuperScript <span class="smalllinenumber">[line 429]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -759,7 +766,7 @@ $array)</code>
   </div>
   <hr />
 	<a name="methodgetUnderline"></a>
-	<h3>method getUnderline <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a475">475</a>]</span></h3>
+	<h3>method getUnderline <span class="smalllinenumber">[line 493]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -784,7 +791,7 @@ $array)</code>
   </div>
   <hr />
 	<a name="methodsetBold"></a>
-	<h3>method setBold <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a362">362</a>]</span></h3>
+	<h3>method setBold <span class="smalllinenumber">[line 380]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -820,7 +827,7 @@ $pValue = false])</code>
   </div>
   <hr />
 	<a name="methodsetColor"></a>
-	<h3>method setColor <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a569">569</a>]</span></h3>
+	<h3>method setColor <span class="smalllinenumber">[line 591]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -859,7 +866,7 @@ $pValue = null])</code>
   </div>
   <hr />
 	<a name="methodsetItalic"></a>
-	<h3>method setItalic <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a393">393</a>]</span></h3>
+	<h3>method setItalic <span class="smalllinenumber">[line 411]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -895,7 +902,7 @@ $pValue = false])</code>
   </div>
   <hr />
 	<a name="methodsetName"></a>
-	<h3>method setName <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a300">300</a>]</span></h3>
+	<h3>method setName <span class="smalllinenumber">[line 318]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -931,7 +938,7 @@ $pValue = 'Calibri'])</code>
   </div>
   <hr />
 	<a name="methodsetSize"></a>
-	<h3>method setSize <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a331">331</a>]</span></h3>
+	<h3>method setSize <span class="smalllinenumber">[line 349]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -967,7 +974,7 @@ $pValue = 10])</code>
   </div>
   <hr />
 	<a name="methodsetStrikethrough"></a>
-	<h3>method setStrikethrough <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a540">540</a>]</span></h3>
+	<h3>method setStrikethrough <span class="smalllinenumber">[line 562]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1003,7 +1010,7 @@ $pValue = false])</code>
   </div>
   <hr />
 	<a name="methodsetStriketrough"></a>
-	<h3>method setStriketrough <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a518">518</a>]</span></h3>
+	<h3>method setStriketrough <span class="smalllinenumber">[line 540]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1042,7 +1049,7 @@ $pValue = false])</code>
   </div>
   <hr />
 	<a name="methodsetSubScript"></a>
-	<h3>method setSubScript <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a456">456</a>]</span></h3>
+	<h3>method setSubScript <span class="smalllinenumber">[line 474]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1078,7 +1085,7 @@ $pValue = false])</code>
   </div>
   <hr />
 	<a name="methodsetSuperScript"></a>
-	<h3>method setSuperScript <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a424">424</a>]</span></h3>
+	<h3>method setSuperScript <span class="smalllinenumber">[line 442]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1114,13 +1121,13 @@ $pValue = false])</code>
   </div>
   <hr />
 	<a name="methodsetUnderline"></a>
-	<h3>method setUnderline <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a488">488</a>]</span></h3>
+	<h3>method setUnderline <span class="smalllinenumber">[line 508]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
 		<code><a href="../PHPExcel_Style/PHPExcel_Style_Font.html">PHPExcel_Style_Font</a> setUnderline(
-[string
-$pValue = PHPExcel_Style_Font::UNDERLINE_NONE])</code>
+[string|boolean
+$pValue = self::UNDERLINE_NONE])</code>
     </td></tr></table>
     </td></tr></table><br />
 	
@@ -1140,9 +1147,9 @@ $pValue = PHPExcel_Style_Font::UNDERLINE_NONE])</code>
     <div class="tags">
     <table border="0" cellspacing="0" cellpadding="0">
           <tr>
-        <td class="type">string&nbsp;&nbsp;</td>
+        <td class="type">string|boolean&nbsp;&nbsp;</td>
         <td><b>$pValue</b>&nbsp;&nbsp;</td>
-        <td>PHPExcel_Style_Font underline type</td>
+        <td>PHPExcel_Style_Font underline type                                     If a boolean is passed, then true equates to UNDERLINE_SINGLE,                                         false equates to UNDERLINE_NONE</td>
       </tr>
         </table>
     </div><br />
@@ -1150,7 +1157,7 @@ $pValue = PHPExcel_Style_Font::UNDERLINE_NONE])</code>
   </div>
   <hr />
 	<a name="method__clone"></a>
-	<h3>method __clone <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a608">608</a>]</span></h3>
+	<h3>method __clone <span class="smalllinenumber">[line 630]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1182,35 +1189,35 @@ $pValue = PHPExcel_Style_Font::UNDERLINE_NONE])</code>
 	<a name="constUNDERLINE_DOUBLE"></a>
 	<p></p>
 	<h4>UNDERLINE_DOUBLE = <span class="value">&nbsp;'double'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a40">40</a>]</p>
+	<p>[line 40]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constUNDERLINE_DOUBLEACCOUNTING"></a>
 	<p></p>
 	<h4>UNDERLINE_DOUBLEACCOUNTING = <span class="value">&nbsp;'doubleAccounting'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a41">41</a>]</p>
+	<p>[line 41]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constUNDERLINE_NONE"></a>
 	<p></p>
 	<h4>UNDERLINE_NONE = <span class="value">&nbsp;'none'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a39">39</a>]</p>
+	<p>[line 39]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constUNDERLINE_SINGLE"></a>
 	<p></p>
 	<h4>UNDERLINE_SINGLE = <span class="value">&nbsp;'single'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a42">42</a>]</p>
+	<p>[line 42]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constUNDERLINE_SINGLEACCOUNTING"></a>
 	<p></p>
 	<h4>UNDERLINE_SINGLEACCOUNTING = <span class="value">&nbsp;'singleAccounting'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleFont.php.html#a43">43</a>]</p>
+	<p>[line 43]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
@@ -1218,7 +1225,7 @@ $pValue = PHPExcel_Style_Font::UNDERLINE_NONE])</code>
 
         <div class="credit">
 		    <hr />
-		    Documentation generated on Sun, 27 Feb 2011 16:31:40 -0800 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+		    Documentation generated on Fri, 12 Oct 2012 00:16:18 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>

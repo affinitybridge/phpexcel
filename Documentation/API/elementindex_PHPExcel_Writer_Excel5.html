@@ -13,7 +13,7 @@
   <tr>
     <td class="header_menu">
         
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                   		  [ <a href="classtrees_PHPExcel_Writer_Excel5.html" class="menu">class tree: PHPExcel_Writer_Excel5</a> ]
 		  [ <a href="elementindex_PHPExcel_Writer_Excel5.html" class="menu">index: PHPExcel_Writer_Excel5</a> ]
 		  	    [ <a href="elementindex.html" class="menu">all elements</a> ]
@@ -33,6 +33,8 @@
               <a href="li_PHPExcel_CachedObjectStorage.html">PHPExcel_CachedObjectStorage</a><br />
               <a href="li_PHPExcel_Calculation.html">PHPExcel_Calculation</a><br />
               <a href="li_PHPExcel_Cell.html">PHPExcel_Cell</a><br />
+              <a href="li_PHPExcel_Chart.html">PHPExcel_Chart</a><br />
+              <a href="li_PHPExcel_Chart_Renderer.html">PHPExcel_Chart_Renderer</a><br />
               <a href="li_PHPExcel_Reader.html">PHPExcel_Reader</a><br />
               <a href="li_PHPExcel_Reader_Excel5.html">PHPExcel_Reader_Excel5</a><br />
               <a href="li_PHPExcel_Reader_Excel2007.html">PHPExcel_Reader_Excel2007</a><br />
@@ -43,8 +45,7 @@
               <a href="li_JAMA.html">JAMA</a><br />
               <a href="li_Math_Stats.html">Math_Stats</a><br />
               <a href="li_PHPExcel_Shared_OLE.html">PHPExcel_Shared_OLE</a><br />
-              <a href="li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
-              <a href="li_PHPExcel_Shared_Best_Fit.html">PHPExcel_Shared_Best_Fit</a><br />
+              <a href="li_PHPExcel_Shared_Trend.html">PHPExcel_Shared_Trend</a><br />
               <a href="li_PHPExcel_Shared_ZipArchive.html">PHPExcel_Shared_ZipArchive</a><br />
               <a href="li_PHPExcel_Style.html">PHPExcel_Style</a><br />
               <a href="li_PHPExcel_Worksheet.html">PHPExcel_Worksheet</a><br />
@@ -117,10 +118,6 @@
 				<dd>in file Xf.php, variable <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Xf.html#var$_bg_color">PHPExcel_Writer_Excel5_Xf::$_bg_color</a><br>&nbsp;&nbsp;&nbsp;&nbsp;The cell's background color.</dd>
 							<dt><b>$_biffsize</b></dt>
 				<dd>in file Workbook.php, variable <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Workbook.html#var$_biffsize">PHPExcel_Writer_Excel5_Workbook::$_biffsize</a><br>&nbsp;&nbsp;&nbsp;&nbsp;The BIFF file size for the workbook.</dd>
-							<dt><b>$_BIFF_version</b></dt>
-				<dd>in file BIFFwriter.php, variable <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_BIFFwriter.html#var$_BIFF_version">PHPExcel_Writer_Excel5_BIFFwriter::$_BIFF_version</a><br>&nbsp;&nbsp;&nbsp;&nbsp;The BIFF/Excel version (5).</dd>
-							<dt><b>$_BIFF_version</b></dt>
-				<dd>in file Parser.php, variable <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Parser.html#var$_BIFF_version">PHPExcel_Writer_Excel5_Parser::$_BIFF_version</a><br>&nbsp;&nbsp;&nbsp;&nbsp;The BIFF version for the workbook</dd>
 							<dt><b>$_bottom_color</b></dt>
 				<dd>in file Xf.php, variable <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Xf.html#var$_bottom_color">PHPExcel_Writer_Excel5_Xf::$_bottom_color</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Color of the bottom border of the cell.</dd>
 							<dt><b>$_codepage</b></dt>
@@ -141,6 +138,8 @@
 				<dd>in file Parser.php, variable <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Parser.html#var$_ext_sheets">PHPExcel_Writer_Excel5_Parser::$_ext_sheets</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Array of external sheets</dd>
 							<dt><b>$_fg_color</b></dt>
 				<dd>in file Xf.php, variable <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Xf.html#var$_fg_color">PHPExcel_Writer_Excel5_Xf::$_fg_color</a><br>&nbsp;&nbsp;&nbsp;&nbsp;The cell's foreground color.</dd>
+							<dt><b>$_fntHashIndex</b></dt>
+				<dd>in file Worksheet.php, variable <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Worksheet.html#var$_fntHashIndex">PHPExcel_Writer_Excel5_Worksheet::$_fntHashIndex</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Array of font hashes associated to FONT records index</dd>
 							<dt><b>$_formula</b></dt>
 				<dd>in file Parser.php, variable <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Parser.html#var$_formula">PHPExcel_Writer_Excel5_Parser::$_formula</a><br>&nbsp;&nbsp;&nbsp;&nbsp;The formula to parse</dd>
 							<dt><b>$_left_color</b></dt>
@@ -163,6 +162,8 @@
 				<dd>in file Workbook.php, variable <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Workbook.html#var$_palette">PHPExcel_Writer_Excel5_Workbook::$_palette</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Array containing the colour palette</dd>
 							<dt><b>$_parse_tree</b></dt>
 				<dd>in file Parser.php, variable <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Parser.html#var$_parse_tree">PHPExcel_Writer_Excel5_Parser::$_parse_tree</a><br>&nbsp;&nbsp;&nbsp;&nbsp;The parse tree to be generated</dd>
+							<dt><b>$_phpSheet</b></dt>
+				<dd>in file Worksheet.php, variable <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Worksheet.html#var$_phpSheet">PHPExcel_Writer_Excel5_Worksheet::$_phpSheet</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Sheet object</dd>
 							<dt><b>$_references</b></dt>
 				<dd>in file Parser.php, variable <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Parser.html#var$_references">PHPExcel_Writer_Excel5_Parser::$_references</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Array of sheet references in the form of REF structures</dd>
 							<dt><b>$_right_color</b></dt>
@@ -181,22 +182,24 @@
 				<dd>in file Xf.php, variable <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Xf.html#var$_top_color">PHPExcel_Writer_Excel5_Xf::$_top_color</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Color of the top border of the cell.</dd>
 							<dt><b>$_xls_strmax</b></dt>
 				<dd>in file Worksheet.php, variable <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Worksheet.html#var$_xls_strmax">PHPExcel_Writer_Excel5_Worksheet::$_xls_strmax</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Maximum number of characters for a string (LABEL record in BIFF5)</dd>
-							<dt><b>__construct</b></dt>
-				<dd>in file Xf.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Xf.html#method__construct">PHPExcel_Writer_Excel5_Xf::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Constructor</dd>
+							<dt><b>_addFont</b></dt>
+				<dd>in file Workbook.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Workbook.html#method_addFont">PHPExcel_Writer_Excel5_Workbook::_addFont()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Add a font to added fonts</dd>
 							<dt><b>__construct</b></dt>
 				<dd>in file Workbook.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Workbook.html#method__construct">PHPExcel_Writer_Excel5_Workbook::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Class constructor</dd>
 							<dt><b>__construct</b></dt>
+				<dd>in file Xf.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Xf.html#method__construct">PHPExcel_Writer_Excel5_Xf::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Constructor</dd>
+							<dt><b>__construct</b></dt>
 				<dd>in file Escher.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Escher.html#method__construct">PHPExcel_Writer_Excel5_Escher::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Constructor</dd>
+							<dt><b>__construct</b></dt>
+				<dd>in file Parser.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Parser.html#method__construct">PHPExcel_Writer_Excel5_Parser::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;The class constructor</dd>
+							<dt><b>__construct</b></dt>
+				<dd>in file Worksheet.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Worksheet.html#method__construct">PHPExcel_Writer_Excel5_Worksheet::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Constructor</dd>
 							<dt><b>__construct</b></dt>
 				<dd>in file BIFFwriter.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_BIFFwriter.html#method__construct">PHPExcel_Writer_Excel5_BIFFwriter::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Constructor</dd>
 							<dt><b>__construct</b></dt>
 				<dd>in file Excel5.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5.html#method__construct">PHPExcel_Writer_Excel5::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Create a new PHPExcel_Writer_Excel5</dd>
 							<dt><b>__construct</b></dt>
 				<dd>in file Font.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Font.html#method__construct">PHPExcel_Writer_Excel5_Font::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Constructor</dd>
-							<dt><b>__construct</b></dt>
-				<dd>in file Parser.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Parser.html#method__construct">PHPExcel_Writer_Excel5_Parser::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;The class constructor</dd>
-							<dt><b>__construct</b></dt>
-				<dd>in file Worksheet.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Worksheet.html#method__construct">PHPExcel_Writer_Excel5_Worksheet::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Constructor</dd>
 					</dl>
 	</div>
 	<a href="elementindex_PHPExcel_Writer_Excel5.html#top">top</a><br>
@@ -264,13 +267,15 @@
 							<dt><b>getData</b></dt>
 				<dd>in file Worksheet.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Worksheet.html#methodgetData">PHPExcel_Writer_Excel5_Worksheet::getData()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Retrieves data from memory in one chunk, or from disk in $buffer  sized chunks.</dd>
 							<dt><b>getEscher</b></dt>
-				<dd>in file Workbook.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Workbook.html#methodgetEscher">PHPExcel_Writer_Excel5_Workbook::getEscher()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Get Escher object</dd>
-							<dt><b>getEscher</b></dt>
 				<dd>in file Worksheet.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Worksheet.html#methodgetEscher">PHPExcel_Writer_Excel5_Worksheet::getEscher()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Get Escher object</dd>
+							<dt><b>getEscher</b></dt>
+				<dd>in file Workbook.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Workbook.html#methodgetEscher">PHPExcel_Writer_Excel5_Workbook::getEscher()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Get Escher object</dd>
 							<dt><b>getPreCalculateFormulas</b></dt>
 				<dd>in file Excel5.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5.html#methodgetPreCalculateFormulas">PHPExcel_Writer_Excel5::getPreCalculateFormulas()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Get Pre-Calculate Formulas</dd>
 							<dt><b>getSpOffsets</b></dt>
 				<dd>in file Escher.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Escher.html#methodgetSpOffsets">PHPExcel_Writer_Excel5_Escher::getSpOffsets()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Gets the shape offsets</dd>
+							<dt><b>getSpTypes</b></dt>
+				<dd>in file Escher.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Escher.html#methodgetSpTypes">PHPExcel_Writer_Excel5_Escher::getSpTypes()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Gets the shape types</dd>
 					</dl>
 	</div>
 	<a href="elementindex_PHPExcel_Writer_Excel5.html#top">top</a><br>
@@ -335,10 +340,6 @@
 				<dd>in file Excel5.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5.html#methodsave">PHPExcel_Writer_Excel5::save()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Save PHPExcel to file</dd>
 							<dt><b>setBgColor</b></dt>
 				<dd>in file Xf.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Xf.html#methodsetBgColor">PHPExcel_Writer_Excel5_Xf::setBgColor()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Sets the cell's background color</dd>
-							<dt><b>setBIFFVersion</b></dt>
-				<dd>in file Font.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Font.html#methodsetBIFFVersion">PHPExcel_Writer_Excel5_Font::setBIFFVersion()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Set BIFF version</dd>
-							<dt><b>setBIFFVersion</b></dt>
-				<dd>in file Xf.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Xf.html#methodsetBIFFVersion">PHPExcel_Writer_Excel5_Xf::setBIFFVersion()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Set BIFF version</dd>
 							<dt><b>setBottomColor</b></dt>
 				<dd>in file Xf.php, method <a href="PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Xf.html#methodsetBottomColor">PHPExcel_Writer_Excel5_Xf::setBottomColor()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Sets the cell's bottom border color</dd>
 							<dt><b>setColorIndex</b></dt>
@@ -418,7 +419,7 @@
 	<a href="elementindex_PHPExcel_Writer_Excel5.html#top">top</a><br>
         <div class="credit">
 		    <hr />
-		    Documentation generated on Sun, 27 Feb 2011 16:26:38 -0800 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+		    Documentation generated on Fri, 12 Oct 2012 00:15:04 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>

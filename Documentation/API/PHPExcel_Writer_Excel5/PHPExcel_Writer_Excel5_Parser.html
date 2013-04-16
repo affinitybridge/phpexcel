@@ -13,7 +13,7 @@
   <tr>
     <td class="header_menu">
         
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                   		  [ <a href="../classtrees_PHPExcel_Writer_Excel5.html" class="menu">class tree: PHPExcel_Writer_Excel5</a> ]
 		  [ <a href="../elementindex_PHPExcel_Writer_Excel5.html" class="menu">index: PHPExcel_Writer_Excel5</a> ]
 		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
@@ -30,21 +30,22 @@
 	</div>
       <b>Packages:</b><br />
               <a href="../li_PHPExcel.html">PHPExcel</a><br />
-              <a href="../li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
               <a href="../li_JAMA.html">JAMA</a><br />
               <a href="../li_Math_Stats.html">Math_Stats</a><br />
               <a href="../li_PHPExcel_CachedObjectStorage.html">PHPExcel_CachedObjectStorage</a><br />
               <a href="../li_PHPExcel_Calculation.html">PHPExcel_Calculation</a><br />
               <a href="../li_PHPExcel_Cell.html">PHPExcel_Cell</a><br />
+              <a href="../li_PHPExcel_Chart.html">PHPExcel_Chart</a><br />
+              <a href="../li_PHPExcel_Chart_Renderer.html">PHPExcel_Chart_Renderer</a><br />
               <a href="../li_PHPExcel_Reader.html">PHPExcel_Reader</a><br />
               <a href="../li_PHPExcel_Reader_Excel5.html">PHPExcel_Reader_Excel5</a><br />
               <a href="../li_PHPExcel_Reader_Excel2007.html">PHPExcel_Reader_Excel2007</a><br />
               <a href="../li_PHPExcel_RichText.html">PHPExcel_RichText</a><br />
               <a href="../li_PHPExcel_Settings.html">PHPExcel_Settings</a><br />
               <a href="../li_PHPExcel_Shared.html">PHPExcel_Shared</a><br />
-              <a href="../li_PHPExcel_Shared_Best_Fit.html">PHPExcel_Shared_Best_Fit</a><br />
               <a href="../li_PHPExcel_Shared_Escher.html">PHPExcel_Shared_Escher</a><br />
               <a href="../li_PHPExcel_Shared_OLE.html">PHPExcel_Shared_OLE</a><br />
+              <a href="../li_PHPExcel_Shared_Trend.html">PHPExcel_Shared_Trend</a><br />
               <a href="../li_PHPExcel_Shared_ZipArchive.html">PHPExcel_Shared_ZipArchive</a><br />
               <a href="../li_PHPExcel_Style.html">PHPExcel_Style</a><br />
               <a href="../li_PHPExcel_Worksheet.html">PHPExcel_Worksheet</a><br />
@@ -111,7 +112,7 @@ Source Location: /PHPExcel/Writer/Excel5/Parser.php<br /><br />
 
 <h4>Copyright:</h4>
 <ul>
-  <li>Copyright (c) 2006 - 2011 PHPExcel (http://www.codeplex.com/PHPExcel)</li>
+  <li>Copyright (c) 2006 - 2012 PHPExcel (http://www.codeplex.com/PHPExcel)</li>
 </ul>
         
 </td>
@@ -119,7 +120,6 @@ Source Location: /PHPExcel/Writer/Excel5/Parser.php<br /><br />
 <td valign="top">
 <h3><a href="#class_vars">Variables</a></h3>
 <ul>
-    <li><a href="../PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Parser.html#var$_BIFF_version">$_BIFF_version</a></li>
     <li><a href="../PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Parser.html#var$_current_char">$_current_char</a></li>
     <li><a href="../PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Parser.html#var$_current_token">$_current_token</a></li>
     <li><a href="../PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Parser.html#var$_ext_sheets">$_ext_sheets</a></li>
@@ -141,8 +141,8 @@ Source Location: /PHPExcel/Writer/Excel5/Parser.php<br /><br />
 <td valign="top">
 <h3><a href="#class_methods">Methods</a></h3>
 <ul>
-    <li><a href="../PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Parser.html#method__construct">__construct</a></li>
     <li><a href="../PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Parser.html#methodparse">parse</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Parser.html#method__construct">__construct</a></li>
     <li><a href="../PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Parser.html#methodsetExtSheet">setExtSheet</a></li>
     <li><a href="../PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Parser.html#methodtoReversePolish">toReversePolish</a></li>
   </ul>
@@ -164,13 +164,13 @@ Source Location: /PHPExcel/Writer/Excel5/Parser.php<br /><br />
 <a name="class_details"></a>
 <h3>Class Details</h3>
 <div class="tags">
-[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Parser.php.html#a60">60</a>]<br />
+[line 60]<br />
 PHPExcel_Writer_Excel5_Parser<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>Copyright (c) 2006 - 2011 PHPExcel (http://www.codeplex.com/PHPExcel)</td>
+    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>Copyright (c) 2006 - 2012 PHPExcel (http://www.codeplex.com/PHPExcel)</td>
   </tr>
 </table>
 </div>
@@ -181,34 +181,10 @@ PHPExcel_Writer_Excel5_Parser<br /><br /><br /><br />
 <a name="class_vars"></a>
 <h3>Class Variables</h3>
 <div class="tags">
-	<a name="var$_BIFF_version"></a>
-	<p></p>
-	<h4>$_BIFF_version = <span class="value"></span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Parser.php.html#a122">122</a>]</p>
-  The BIFF version for the workbook<br /><br /><br /><br />
-<h4>Tags:</h4>
-<div class="tags">
-<table border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
-  </tr>
-</table>
-</div>
-
-  <br />
-	<div class="tags">
-  <table border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td><b>Type:</b>&nbsp;&nbsp;</td>
-      <td>integer</td>
-    </tr>
-      </table>
-	</div><br /><br />
-	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="var$_current_char"></a>
 	<p></p>
 	<h4>$_current_char = <span class="value"></span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Parser.php.html#a80">80</a>]</p>
+	<p>[line 80]</p>
   The index of the character we are currently looking at<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
@@ -232,7 +208,7 @@ PHPExcel_Writer_Excel5_Parser<br /><br /><br /><br />
 	<a name="var$_current_token"></a>
 	<p></p>
 	<h4>$_current_token = <span class="value"></span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Parser.php.html#a86">86</a>]</p>
+	<p>[line 86]</p>
   The token we are working on.<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
@@ -256,7 +232,7 @@ PHPExcel_Writer_Excel5_Parser<br /><br /><br /><br />
 	<a name="var$_ext_sheets"></a>
 	<p></p>
 	<h4>$_ext_sheets = <span class="value"></span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Parser.php.html#a110">110</a>]</p>
+	<p>[line 110]</p>
   Array of external sheets<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
@@ -280,7 +256,7 @@ PHPExcel_Writer_Excel5_Parser<br /><br /><br /><br />
 	<a name="var$_formula"></a>
 	<p></p>
 	<h4>$_formula = <span class="value"></span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Parser.php.html#a92">92</a>]</p>
+	<p>[line 92]</p>
   The formula to parse<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
@@ -304,7 +280,7 @@ PHPExcel_Writer_Excel5_Parser<br /><br /><br /><br />
 	<a name="var$_lookahead"></a>
 	<p></p>
 	<h4>$_lookahead = <span class="value"></span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Parser.php.html#a98">98</a>]</p>
+	<p>[line 98]</p>
   The character ahead of the current char<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
@@ -328,7 +304,7 @@ PHPExcel_Writer_Excel5_Parser<br /><br /><br /><br />
 	<a name="var$_parse_tree"></a>
 	<p></p>
 	<h4>$_parse_tree = <span class="value"></span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Parser.php.html#a104">104</a>]</p>
+	<p>[line 104]</p>
   The parse tree to be generated<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
@@ -352,7 +328,7 @@ PHPExcel_Writer_Excel5_Parser<br /><br /><br /><br />
 	<a name="var$_references"></a>
 	<p></p>
 	<h4>$_references = <span class="value"></span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Parser.php.html#a116">116</a>]</p>
+	<p>[line 116]</p>
   Array of sheet references in the form of REF structures<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
@@ -381,50 +357,8 @@ PHPExcel_Writer_Excel5_Parser<br /><br /><br /><br />
 <div class="tags">
 
   <hr />
-	<a name="method__construct"></a>
-	<h3>constructor __construct <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Parser.php.html#a130">130</a>]</span></h3>
-	<div class="function">
-    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
-    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
-		<code>PHPExcel_Writer_Excel5_Parser __construct(
-
-$biff_version, integer
-$byte_order)</code>
-    </td></tr></table>
-    </td></tr></table><br />
-	
-		The class constructor<br /><br /><br /><br />
-<h4>Tags:</h4>
-<div class="tags">
-<table border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
-  </tr>
-</table>
-</div>
-<br /><br />
-
-	
-        <h4>Parameters:</h4>
-    <div class="tags">
-    <table border="0" cellspacing="0" cellpadding="0">
-          <tr>
-        <td class="type">integer&nbsp;&nbsp;</td>
-        <td><b>$byte_order</b>&nbsp;&nbsp;</td>
-        <td>The byte order (Little endian or Big endian) of the architecture                            (optional). 1 =&gt; big endian, 0 (default) little endian.</td>
-      </tr>
-          <tr>
-        <td class="type">&nbsp;&nbsp;</td>
-        <td><b>$biff_version</b>&nbsp;&nbsp;</td>
-        <td></td>
-      </tr>
-        </table>
-    </div><br />
-        <div class="top">[ <a href="#top">Top</a> ]</div>
-  </div>
-  <hr />
 	<a name="methodparse"></a>
-	<h3>method parse <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Parser.php.html#a1233">1233</a>]</span></h3>
+	<h3>method parse <span class="smalllinenumber">[line 1205]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -462,8 +396,33 @@ $formula)</code>
         <div class="top">[ <a href="#top">Top</a> ]</div>
   </div>
   <hr />
+	<a name="method__construct"></a>
+	<h3>constructor __construct <span class="smalllinenumber">[line 122]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>PHPExcel_Writer_Excel5_Parser __construct(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		The class constructor<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
 	<a name="methodsetExtSheet"></a>
-	<h3>method setExtSheet <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Parser.php.html#a951">951</a>]</span></h3>
+	<h3>method setExtSheet <span class="smalllinenumber">[line 928]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -508,7 +467,7 @@ $index)</code>
   </div>
   <hr />
 	<a name="methodtoReversePolish"></a>
-	<h3>method toReversePolish <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Parser.php.html#a1568">1568</a>]</span></h3>
+	<h3>method toReversePolish <span class="smalllinenumber">[line 1540]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -554,14 +513,14 @@ $tree = array()])</code>
 	<a name="constREGEX_SHEET_TITLE_QUOTED"></a>
 	<p></p>
 	<h4>REGEX_SHEET_TITLE_QUOTED = <span class="value">&nbsp;'(([^\*\:\/\\\\\?\[\]\\\'])+|(\\\'\\\')+)+'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Parser.php.html#a74">74</a>]</p>
+	<p>[line 74]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constREGEX_SHEET_TITLE_UNQUOTED"></a>
 	<p></p>
 	<h4>REGEX_SHEET_TITLE_UNQUOTED = <span class="value">&nbsp;'[^\*\:\/\\\\\?\[\]\+\-\%&nbsp;\\\'\^\&amp;\&lt;\&gt;\=\,\;\#\(\)\&quot;\{\}]+'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Parser.php.html#a68">68</a>]</p>
+	<p>[line 68]</p>
   Constants<br /><br />
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
@@ -569,7 +528,7 @@ $tree = array()])</code>
 
         <div class="credit">
 		    <hr />
-		    Documentation generated on Sun, 27 Feb 2011 16:33:09 -0800 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+		    Documentation generated on Fri, 12 Oct 2012 00:16:53 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>

@@ -13,8 +13,8 @@
   <tr>
     <td class="header_menu">
         
-                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                                                  		  [ <a href="classtrees_PHPExcel_Shared.html" class="menu">class tree: PHPExcel_Shared</a> ]
+                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                              		  [ <a href="classtrees_PHPExcel_Shared.html" class="menu">class tree: PHPExcel_Shared</a> ]
 		  [ <a href="elementindex_PHPExcel_Shared.html" class="menu">index: PHPExcel_Shared</a> ]
 		  	    [ <a href="elementindex.html" class="menu">all elements</a> ]
     </td>
@@ -33,6 +33,8 @@
               <a href="li_PHPExcel_CachedObjectStorage.html">PHPExcel_CachedObjectStorage</a><br />
               <a href="li_PHPExcel_Calculation.html">PHPExcel_Calculation</a><br />
               <a href="li_PHPExcel_Cell.html">PHPExcel_Cell</a><br />
+              <a href="li_PHPExcel_Chart.html">PHPExcel_Chart</a><br />
+              <a href="li_PHPExcel_Chart_Renderer.html">PHPExcel_Chart_Renderer</a><br />
               <a href="li_PHPExcel_Reader.html">PHPExcel_Reader</a><br />
               <a href="li_PHPExcel_Reader_Excel5.html">PHPExcel_Reader_Excel5</a><br />
               <a href="li_PHPExcel_Reader_Excel2007.html">PHPExcel_Reader_Excel2007</a><br />
@@ -43,8 +45,7 @@
               <a href="li_JAMA.html">JAMA</a><br />
               <a href="li_Math_Stats.html">Math_Stats</a><br />
               <a href="li_PHPExcel_Shared_OLE.html">PHPExcel_Shared_OLE</a><br />
-              <a href="li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
-              <a href="li_PHPExcel_Shared_Best_Fit.html">PHPExcel_Shared_Best_Fit</a><br />
+              <a href="li_PHPExcel_Shared_Trend.html">PHPExcel_Shared_Trend</a><br />
               <a href="li_PHPExcel_Shared_ZipArchive.html">PHPExcel_Shared_ZipArchive</a><br />
               <a href="li_PHPExcel_Style.html">PHPExcel_Style</a><br />
               <a href="li_PHPExcel_Worksheet.html">PHPExcel_Worksheet</a><br />
@@ -129,6 +130,8 @@
 	<div>
 		<h2>_</h2>
 		<dl>
+							<dt><b>$_monthNames</b></dt>
+				<dd>in file Date.php, variable <a href="PHPExcel_Shared/PHPExcel_Shared_Date.html#var$_monthNames">PHPExcel_Shared_Date::$_monthNames</a></dd>
 							<dt><b>__construct</b></dt>
 				<dd>in file XMLWriter.php, method <a href="PHPExcel_Shared/PHPExcel_Shared_XMLWriter.html#method__construct">PHPExcel_Shared_XMLWriter::__construct()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Create a new PHPExcel_Shared_XMLWriter instance</dd>
 							<dt><b>__destruct</b></dt>
@@ -580,15 +583,15 @@
 							<dt><b>stream_eof</b></dt>
 				<dd>in file ZipStreamWrapper.php, method <a href="PHPExcel_Shared/PHPExcel_Shared_ZipStreamWrapper.html#methodstream_eof">PHPExcel_Shared_ZipStreamWrapper::stream_eof()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;EOF stream</dd>
 							<dt><b>stream_open</b></dt>
-				<dd>in file ZipStreamWrapper.php, method <a href="PHPExcel_Shared/PHPExcel_Shared_ZipStreamWrapper.html#methodstream_open">PHPExcel_Shared_ZipStreamWrapper::stream_open()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Open stream</dd>
+				<dd>in file ZipStreamWrapper.php, method <a href="PHPExcel_Shared/PHPExcel_Shared_ZipStreamWrapper.html#methodstream_open">PHPExcel_Shared_ZipStreamWrapper::stream_open()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Implements support for fopen().</dd>
 							<dt><b>stream_read</b></dt>
-				<dd>in file ZipStreamWrapper.php, method <a href="PHPExcel_Shared/PHPExcel_Shared_ZipStreamWrapper.html#methodstream_read">PHPExcel_Shared_ZipStreamWrapper::stream_read()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Read stream</dd>
+				<dd>in file ZipStreamWrapper.php, method <a href="PHPExcel_Shared/PHPExcel_Shared_ZipStreamWrapper.html#methodstream_read">PHPExcel_Shared_ZipStreamWrapper::stream_read()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Implements support for fread(), fgets() etc.</dd>
 							<dt><b>stream_seek</b></dt>
 				<dd>in file ZipStreamWrapper.php, method <a href="PHPExcel_Shared/PHPExcel_Shared_ZipStreamWrapper.html#methodstream_seek">PHPExcel_Shared_ZipStreamWrapper::stream_seek()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Seek stream</dd>
 							<dt><b>stream_stat</b></dt>
-				<dd>in file ZipStreamWrapper.php, method <a href="PHPExcel_Shared/PHPExcel_Shared_ZipStreamWrapper.html#methodstream_stat">PHPExcel_Shared_ZipStreamWrapper::stream_stat()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Stat stream</dd>
+				<dd>in file ZipStreamWrapper.php, method <a href="PHPExcel_Shared/PHPExcel_Shared_ZipStreamWrapper.html#methodstream_stat">PHPExcel_Shared_ZipStreamWrapper::stream_stat()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Implements support for fstat().</dd>
 							<dt><b>stream_tell</b></dt>
-				<dd>in file ZipStreamWrapper.php, method <a href="PHPExcel_Shared/PHPExcel_Shared_ZipStreamWrapper.html#methodstream_tell">PHPExcel_Shared_ZipStreamWrapper::stream_tell()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Tell stream</dd>
+				<dd>in file ZipStreamWrapper.php, method <a href="PHPExcel_Shared/PHPExcel_Shared_ZipStreamWrapper.html#methodstream_tell">PHPExcel_Shared_ZipStreamWrapper::stream_tell()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Returns the position of the file pointer, i.e. its offset into the file  stream. Implements support for ftell().</dd>
 							<dt><b>stringToExcel</b></dt>
 				<dd>in file Date.php, method <a href="PHPExcel_Shared/PHPExcel_Shared_Date.html#methodstringToExcel">PHPExcel_Shared_Date::stringToExcel()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Convert a date/time string to Excel time</dd>
 							<dt><b>STRING_REGEXP_FRACTION</b></dt>
@@ -613,6 +616,8 @@
 				<dd>in file Font.php, class constant <a href="PHPExcel_Shared/PHPExcel_Shared_Font.html#constTAHOMA">PHPExcel_Shared_Font::TAHOMA</a></dd>
 							<dt><b>TAHOMA_BOLD</b></dt>
 				<dd>in file Font.php, class constant <a href="PHPExcel_Shared/PHPExcel_Shared_Font.html#constTAHOMA_BOLD">PHPExcel_Shared_Font::TAHOMA_BOLD</a></dd>
+							<dt><b>testStringAsNumeric</b></dt>
+				<dd>in file String.php, method <a href="PHPExcel_Shared/PHPExcel_Shared_String.html#methodtestStringAsNumeric">PHPExcel_Shared_String::testStringAsNumeric()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Retrieve any leading numeric part of a string, or return the full string if no leading numeric 	(handles basic integer or float, but not exponent or non decimal)</dd>
 							<dt><b>TIMES_NEW_ROMAN</b></dt>
 				<dd>in file Font.php, class constant <a href="PHPExcel_Shared/PHPExcel_Shared_Font.html#constTIMES_NEW_ROMAN">PHPExcel_Shared_Font::TIMES_NEW_ROMAN</a></dd>
 							<dt><b>TIMES_NEW_ROMAN_BOLD</b></dt>
@@ -698,7 +703,7 @@
 	<a href="elementindex_PHPExcel_Shared.html#top">top</a><br>
         <div class="credit">
 		    <hr />
-		    Documentation generated on Sun, 27 Feb 2011 16:26:38 -0800 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+		    Documentation generated on Fri, 12 Oct 2012 00:15:04 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>

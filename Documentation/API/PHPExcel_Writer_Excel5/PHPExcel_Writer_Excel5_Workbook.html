@@ -13,7 +13,7 @@
   <tr>
     <td class="header_menu">
         
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                   		  [ <a href="../classtrees_PHPExcel_Writer_Excel5.html" class="menu">class tree: PHPExcel_Writer_Excel5</a> ]
 		  [ <a href="../elementindex_PHPExcel_Writer_Excel5.html" class="menu">index: PHPExcel_Writer_Excel5</a> ]
 		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
@@ -30,21 +30,22 @@
 	</div>
       <b>Packages:</b><br />
               <a href="../li_PHPExcel.html">PHPExcel</a><br />
-              <a href="../li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
               <a href="../li_JAMA.html">JAMA</a><br />
               <a href="../li_Math_Stats.html">Math_Stats</a><br />
               <a href="../li_PHPExcel_CachedObjectStorage.html">PHPExcel_CachedObjectStorage</a><br />
               <a href="../li_PHPExcel_Calculation.html">PHPExcel_Calculation</a><br />
               <a href="../li_PHPExcel_Cell.html">PHPExcel_Cell</a><br />
+              <a href="../li_PHPExcel_Chart.html">PHPExcel_Chart</a><br />
+              <a href="../li_PHPExcel_Chart_Renderer.html">PHPExcel_Chart_Renderer</a><br />
               <a href="../li_PHPExcel_Reader.html">PHPExcel_Reader</a><br />
               <a href="../li_PHPExcel_Reader_Excel5.html">PHPExcel_Reader_Excel5</a><br />
               <a href="../li_PHPExcel_Reader_Excel2007.html">PHPExcel_Reader_Excel2007</a><br />
               <a href="../li_PHPExcel_RichText.html">PHPExcel_RichText</a><br />
               <a href="../li_PHPExcel_Settings.html">PHPExcel_Settings</a><br />
               <a href="../li_PHPExcel_Shared.html">PHPExcel_Shared</a><br />
-              <a href="../li_PHPExcel_Shared_Best_Fit.html">PHPExcel_Shared_Best_Fit</a><br />
               <a href="../li_PHPExcel_Shared_Escher.html">PHPExcel_Shared_Escher</a><br />
               <a href="../li_PHPExcel_Shared_OLE.html">PHPExcel_Shared_OLE</a><br />
+              <a href="../li_PHPExcel_Shared_Trend.html">PHPExcel_Shared_Trend</a><br />
               <a href="../li_PHPExcel_Shared_ZipArchive.html">PHPExcel_Shared_ZipArchive</a><br />
               <a href="../li_PHPExcel_Style.html">PHPExcel_Style</a><br />
               <a href="../li_PHPExcel_Worksheet.html">PHPExcel_Worksheet</a><br />
@@ -113,7 +114,7 @@ Source Location: /PHPExcel/Writer/Excel5/Workbook.php<br /><br />
 
 <h4>Copyright:</h4>
 <ul>
-  <li>Copyright (c) 2006 - 2011 PHPExcel (http://www.codeplex.com/PHPExcel)</li>
+  <li>Copyright (c) 2006 - 2012 PHPExcel (http://www.codeplex.com/PHPExcel)</li>
 </ul>
         
 </td>
@@ -137,6 +138,7 @@ Source Location: /PHPExcel/Writer/Excel5/Workbook.php<br /><br />
     <li><a href="../PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Workbook.html#methodgetEscher">getEscher</a></li>
     <li><a href="../PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Workbook.html#methodsetEscher">setEscher</a></li>
     <li><a href="../PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Workbook.html#methodwriteWorkbook">writeWorkbook</a></li>
+    <li><a href="../PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_Workbook.html#method_addFont">_addFont</a></li>
   </ul>
 </td>
 
@@ -153,12 +155,6 @@ Source Location: /PHPExcel/Writer/Excel5/Workbook.php<br /><br />
 <div class="tags">
 <h4>Class: <a href="../PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_BIFFwriter.html">PHPExcel_Writer_Excel5_BIFFwriter</a></h4>
 <dl>
-<dt>
-  <a href="../PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_BIFFwriter.html#var$_BIFF_version">PHPExcel_Writer_Excel5_BIFFwriter::$_BIFF_version</a>
-  </dt>
-<dd>
-   
-</dd>
 <dt>
   <a href="../PHPExcel_Writer_Excel5/PHPExcel_Writer_Excel5_BIFFwriter.html#var$_data">PHPExcel_Writer_Excel5_BIFFwriter::$_data</a>
   </dt>
@@ -220,13 +216,13 @@ Source Location: /PHPExcel/Writer/Excel5/Workbook.php<br /><br />
 <a name="class_details"></a>
 <h3>Class Details</h3>
 <div class="tags">
-[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Workbook.php.html#a71">71</a>]<br />
+[line 71]<br />
 PHPExcel_Writer_Excel5_Workbook<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>Copyright (c) 2006 - 2011 PHPExcel (http://www.codeplex.com/PHPExcel)</td>
+    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>Copyright (c) 2006 - 2012 PHPExcel (http://www.codeplex.com/PHPExcel)</td>
   </tr>
 </table>
 </div>
@@ -240,7 +236,7 @@ PHPExcel_Writer_Excel5_Workbook<br /><br /><br /><br />
 	<a name="var$_biffsize"></a>
 	<p></p>
 	<h4>$_biffsize = <span class="value"></span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Workbook.php.html#a85">85</a>]</p>
+	<p>[line 85]</p>
   The BIFF file size for the workbook.<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
@@ -267,7 +263,7 @@ PHPExcel_Writer_Excel5_Workbook<br /><br /><br /><br />
 	<a name="var$_codepage"></a>
 	<p></p>
 	<h4>$_codepage = <span class="value"></span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Workbook.php.html#a103">103</a>]</p>
+	<p>[line 103]</p>
   The codepage indicates the text encoding used for strings<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
@@ -291,7 +287,7 @@ PHPExcel_Writer_Excel5_Workbook<br /><br /><br /><br />
 	<a name="var$_country_code"></a>
 	<p></p>
 	<h4>$_country_code = <span class="value"></span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Workbook.php.html#a109">109</a>]</p>
+	<p>[line 109]</p>
   The country code used for localization<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
@@ -315,7 +311,7 @@ PHPExcel_Writer_Excel5_Workbook<br /><br /><br /><br />
 	<a name="var$_palette"></a>
 	<p></p>
 	<h4>$_palette = <span class="value"></span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Workbook.php.html#a97">97</a>]</p>
+	<p>[line 97]</p>
   Array containing the colour palette<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
@@ -345,23 +341,18 @@ PHPExcel_Writer_Excel5_Workbook<br /><br /><br /><br />
 
   <hr />
 	<a name="method__construct"></a>
-	<h3>constructor __construct <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Workbook.php.html#a203">203</a>]</span></h3>
+	<h3>constructor __construct <span class="smalllinenumber">[line 203]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
 		<code>PHPExcel_Writer_Excel5_Workbook __construct(
-[
-$phpExcel = null], [
-$BIFF_version = 0x0600], 
-&$str_total, 
-&$str_unique, 
-&$str_table, 
+[PHPExcel
+$phpExcel = null], int
+&$str_total, int
+&$str_unique, array
+&$str_table, array
 &$colors, mixed
-$parser, int
-$BIFF_verions, int
-$str_total, int
-$str_unique, array
-$str_table)</code>
+$parser)</code>
     </td></tr></table>
     </td></tr></table><br />
 	
@@ -387,53 +378,28 @@ $str_table)</code>
       </tr>
           <tr>
         <td class="type">int&nbsp;&nbsp;</td>
-        <td><b>$BIFF_verions</b>&nbsp;&nbsp;</td>
-        <td>BIFF version</td>
-      </tr>
-          <tr>
-        <td class="type">int&nbsp;&nbsp;</td>
-        <td><b>$str_total</b>&nbsp;&nbsp;</td>
+        <td><b>&$str_total</b>&nbsp;&nbsp;</td>
         <td>Total number of strings</td>
       </tr>
           <tr>
         <td class="type">int&nbsp;&nbsp;</td>
-        <td><b>$str_unique</b>&nbsp;&nbsp;</td>
+        <td><b>&$str_unique</b>&nbsp;&nbsp;</td>
         <td>Total number of unique strings</td>
       </tr>
           <tr>
         <td class="type">array&nbsp;&nbsp;</td>
-        <td><b>$str_table</b>&nbsp;&nbsp;</td>
-        <td></td>
+        <td><b>&$str_table</b>&nbsp;&nbsp;</td>
+        <td>String Table</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>&$colors</b>&nbsp;&nbsp;</td>
+        <td>Colour Table</td>
       </tr>
           <tr>
         <td class="type">mixed&nbsp;&nbsp;</td>
         <td><b>$parser</b>&nbsp;&nbsp;</td>
         <td>The formula parser created for the Workbook</td>
-      </tr>
-          <tr>
-        <td class="type">&nbsp;&nbsp;</td>
-        <td><b>$BIFF_version</b>&nbsp;&nbsp;</td>
-        <td></td>
-      </tr>
-          <tr>
-        <td class="type">&nbsp;&nbsp;</td>
-        <td><b>&$str_total</b>&nbsp;&nbsp;</td>
-        <td></td>
-      </tr>
-          <tr>
-        <td class="type">&nbsp;&nbsp;</td>
-        <td><b>&$str_unique</b>&nbsp;&nbsp;</td>
-        <td></td>
-      </tr>
-          <tr>
-        <td class="type">&nbsp;&nbsp;</td>
-        <td><b>&$str_table</b>&nbsp;&nbsp;</td>
-        <td></td>
-      </tr>
-          <tr>
-        <td class="type">&nbsp;&nbsp;</td>
-        <td><b>&$colors</b>&nbsp;&nbsp;</td>
-        <td></td>
       </tr>
         </table>
     </div><br />
@@ -441,7 +407,7 @@ $str_table)</code>
   </div>
   <hr />
 	<a name="methodaddXfWriter"></a>
-	<h3>method addXfWriter <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Workbook.php.html#a260">260</a>]</span></h3>
+	<h3>method addXfWriter <span class="smalllinenumber">[line 253]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -486,7 +452,7 @@ $isStyleXf = false])</code>
   </div>
   <hr />
 	<a name="methodgetEscher"></a>
-	<h3>method getEscher <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Workbook.php.html#a1431">1431</a>]</span></h3>
+	<h3>method getEscher <span class="smalllinenumber">[line 1435]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -511,12 +477,12 @@ $isStyleXf = false])</code>
   </div>
   <hr />
 	<a name="methodsetEscher"></a>
-	<h3>method setEscher <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Workbook.php.html#a1441">1441</a>]</span></h3>
+	<h3>method setEscher <span class="smalllinenumber">[line 1445]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
 		<code>void setEscher(
-[
+[PHPExcel_Shared_Escher
 $pValue = null])</code>
     </td></tr></table>
     </td></tr></table><br />
@@ -547,14 +513,13 @@ $pValue = null])</code>
   </div>
   <hr />
 	<a name="methodwriteWorkbook"></a>
-	<h3>method writeWorkbook <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5Workbook.php.html#a425">425</a>]</span></h3>
+	<h3>method writeWorkbook <span class="smalllinenumber">[line 425]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
 		<code>string writeWorkbook(
-[
-$pWorksheetSizes = null], array
-$worksheetSizes)</code>
+[array
+$pWorksheetSizes = null])</code>
     </td></tr></table>
     </td></tr></table><br />
 	
@@ -578,12 +543,46 @@ $worksheetSizes)</code>
     <table border="0" cellspacing="0" cellpadding="0">
           <tr>
         <td class="type">array&nbsp;&nbsp;</td>
-        <td><b>$worksheetSizes</b>&nbsp;&nbsp;</td>
+        <td><b>$pWorksheetSizes</b>&nbsp;&nbsp;</td>
         <td>The sizes in bytes of the binary worksheet streams</td>
       </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="method_addFont"></a>
+	<h3>method _addFont <span class="smalllinenumber">[line 303]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>int _addFont(
+PHPExcel_Style_Font
+$font)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Add a font to added fonts<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Index to FONT record</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
           <tr>
-        <td class="type">&nbsp;&nbsp;</td>
-        <td><b>$pWorksheetSizes</b>&nbsp;&nbsp;</td>
+        <td class="type"><a href="../PHPExcel_Style/PHPExcel_Style_Font.html">PHPExcel_Style_Font</a>&nbsp;&nbsp;</td>
+        <td><b>$font</b>&nbsp;&nbsp;</td>
         <td></td>
       </tr>
         </table>
@@ -595,7 +594,7 @@ $worksheetSizes)</code>
 
         <div class="credit">
 		    <hr />
-		    Documentation generated on Sun, 27 Feb 2011 16:37:07 -0800 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+		    Documentation generated on Fri, 12 Oct 2012 00:18:13 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>

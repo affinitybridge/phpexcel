@@ -21,7 +21,7 @@ $exampleTypeList = glob('./*',GLOB_ONLYDIR);
 
 foreach($exampleTypeList as $exampleType) {
 
-	echo '<h1>PHPExcel '.pathinfo($exampleType,PATHINFO_BASENAME).' Examples</h1>';
+	echo '<h1>PHPExcel ' . pathinfo($exampleType,PATHINFO_BASENAME) . ' Examples</h1>';
 
 	$exampleList = glob('./'.$exampleType.'/*.php');
 
@@ -36,7 +36,8 @@ foreach($exampleTypeList as $exampleType) {
 			$h2Text = (preg_match($h2Pattern, $fileData, $out)) ? $out[1] : '';
 
 			echo '<a href="',$exampleFile,'">',$h1Text,'</a><br />';
-			if ($h2Text > '') {
+			if (($h2Text > '') &&
+				(pathinfo($exampleType,PATHINFO_BASENAME) != 'Calculations')) {
 				echo $h2Text,'<br />';
 			}
 		}

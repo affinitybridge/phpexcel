@@ -13,7 +13,7 @@
   <tr>
     <td class="header_menu">
         
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                   		  [ <a href="../classtrees_PHPExcel_Writer_Excel5.html" class="menu">class tree: PHPExcel_Writer_Excel5</a> ]
 		  [ <a href="../elementindex_PHPExcel_Writer_Excel5.html" class="menu">index: PHPExcel_Writer_Excel5</a> ]
 		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
@@ -30,21 +30,22 @@
 	</div>
       <b>Packages:</b><br />
               <a href="../li_PHPExcel.html">PHPExcel</a><br />
-              <a href="../li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
               <a href="../li_JAMA.html">JAMA</a><br />
               <a href="../li_Math_Stats.html">Math_Stats</a><br />
               <a href="../li_PHPExcel_CachedObjectStorage.html">PHPExcel_CachedObjectStorage</a><br />
               <a href="../li_PHPExcel_Calculation.html">PHPExcel_Calculation</a><br />
               <a href="../li_PHPExcel_Cell.html">PHPExcel_Cell</a><br />
+              <a href="../li_PHPExcel_Chart.html">PHPExcel_Chart</a><br />
+              <a href="../li_PHPExcel_Chart_Renderer.html">PHPExcel_Chart_Renderer</a><br />
               <a href="../li_PHPExcel_Reader.html">PHPExcel_Reader</a><br />
               <a href="../li_PHPExcel_Reader_Excel5.html">PHPExcel_Reader_Excel5</a><br />
               <a href="../li_PHPExcel_Reader_Excel2007.html">PHPExcel_Reader_Excel2007</a><br />
               <a href="../li_PHPExcel_RichText.html">PHPExcel_RichText</a><br />
               <a href="../li_PHPExcel_Settings.html">PHPExcel_Settings</a><br />
               <a href="../li_PHPExcel_Shared.html">PHPExcel_Shared</a><br />
-              <a href="../li_PHPExcel_Shared_Best_Fit.html">PHPExcel_Shared_Best_Fit</a><br />
               <a href="../li_PHPExcel_Shared_Escher.html">PHPExcel_Shared_Escher</a><br />
               <a href="../li_PHPExcel_Shared_OLE.html">PHPExcel_Shared_OLE</a><br />
+              <a href="../li_PHPExcel_Shared_Trend.html">PHPExcel_Shared_Trend</a><br />
               <a href="../li_PHPExcel_Shared_ZipArchive.html">PHPExcel_Shared_ZipArchive</a><br />
               <a href="../li_PHPExcel_Style.html">PHPExcel_Style</a><br />
               <a href="../li_PHPExcel_Worksheet.html">PHPExcel_Worksheet</a><br />
@@ -111,7 +112,7 @@ Source Location: /PHPExcel/Writer/Excel5.php<br /><br />
 
 <h4>Copyright:</h4>
 <ul>
-  <li>Copyright (c) 2006 - 2011 PHPExcel (http://www.codeplex.com/PHPExcel)</li>
+  <li>Copyright (c) 2006 - 2012 PHPExcel (http://www.codeplex.com/PHPExcel)</li>
 </ul>
                 <p class="implements">
             Implements interfaces:
@@ -150,13 +151,13 @@ Source Location: /PHPExcel/Writer/Excel5.php<br /><br />
 <a name="class_details"></a>
 <h3>Class Details</h3>
 <div class="tags">
-[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5.php.html#a36">36</a>]<br />
+[line 36]<br />
 PHPExcel_Writer_Excel5<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>Copyright (c) 2006 - 2011 PHPExcel (http://www.codeplex.com/PHPExcel)</td>
+    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>Copyright (c) 2006 - 2012 PHPExcel (http://www.codeplex.com/PHPExcel)</td>
   </tr>
 </table>
 </div>
@@ -171,12 +172,12 @@ PHPExcel_Writer_Excel5<br /><br /><br /><br />
 
   <hr />
 	<a name="method__construct"></a>
-	<h3>constructor __construct <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5.php.html#a107">107</a>]</span></h3>
+	<h3>constructor __construct <span class="smalllinenumber">[line 113]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
 		<code>PHPExcel_Writer_Excel5 __construct(
-
+PHPExcel
 $phpExcel)</code>
     </td></tr></table>
     </td></tr></table><br />
@@ -207,7 +208,7 @@ $phpExcel)</code>
   </div>
   <hr />
 	<a name="methodgetPreCalculateFormulas"></a>
-	<h3>method getPreCalculateFormulas <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5.php.html#a208">208</a>]</span></h3>
+	<h3>method getPreCalculateFormulas <span class="smalllinenumber">[line 256]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -232,14 +233,13 @@ $phpExcel)</code>
   </div>
   <hr />
 	<a name="methodsave"></a>
-	<h3>method save <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5.php.html#a119">119</a>]</span></h3>
+	<h3>method save <span class="smalllinenumber">[line 125]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
 		<code>void save(
-[
-$pFilename = null], string
-$pFileName)</code>
+[string
+$pFilename = null])</code>
     </td></tr></table>
     </td></tr></table><br />
 	
@@ -263,11 +263,6 @@ $pFileName)</code>
     <table border="0" cellspacing="0" cellpadding="0">
           <tr>
         <td class="type">string&nbsp;&nbsp;</td>
-        <td><b>$pFileName</b>&nbsp;&nbsp;</td>
-        <td></td>
-      </tr>
-          <tr>
-        <td class="type">&nbsp;&nbsp;</td>
         <td><b>$pFilename</b>&nbsp;&nbsp;</td>
         <td></td>
       </tr>
@@ -277,7 +272,7 @@ $pFileName)</code>
   </div>
   <hr />
 	<a name="methodsetPreCalculateFormulas"></a>
-	<h3>method setPreCalculateFormulas <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5.php.html#a217">217</a>]</span></h3>
+	<h3>method setPreCalculateFormulas <span class="smalllinenumber">[line 265]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -313,7 +308,7 @@ $pValue = true])</code>
   </div>
   <hr />
 	<a name="methodsetTempDir"></a>
-	<h3>method setTempDir <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Writer_Excel5__PHPExcelWriterExcel5.php.html#a199">199</a>]</span></h3>
+	<h3>method setTempDir <span class="smalllinenumber">[line 247]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -358,7 +353,7 @@ $pValue = ''])</code>
 
         <div class="credit">
 		    <hr />
-		    Documentation generated on Sun, 27 Feb 2011 16:31:13 -0800 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+		    Documentation generated on Fri, 12 Oct 2012 00:16:13 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>

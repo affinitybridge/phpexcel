@@ -13,7 +13,7 @@
   <tr>
     <td class="header_menu">
         
-                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                   		  [ <a href="../classtrees_PHPExcel_Style.html" class="menu">class tree: PHPExcel_Style</a> ]
 		  [ <a href="../elementindex_PHPExcel_Style.html" class="menu">index: PHPExcel_Style</a> ]
 		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
@@ -30,21 +30,22 @@
 	</div>
       <b>Packages:</b><br />
               <a href="../li_PHPExcel.html">PHPExcel</a><br />
-              <a href="../li_com-tecnick-tcpdf.html">com-tecnick-tcpdf</a><br />
               <a href="../li_JAMA.html">JAMA</a><br />
               <a href="../li_Math_Stats.html">Math_Stats</a><br />
               <a href="../li_PHPExcel_CachedObjectStorage.html">PHPExcel_CachedObjectStorage</a><br />
               <a href="../li_PHPExcel_Calculation.html">PHPExcel_Calculation</a><br />
               <a href="../li_PHPExcel_Cell.html">PHPExcel_Cell</a><br />
+              <a href="../li_PHPExcel_Chart.html">PHPExcel_Chart</a><br />
+              <a href="../li_PHPExcel_Chart_Renderer.html">PHPExcel_Chart_Renderer</a><br />
               <a href="../li_PHPExcel_Reader.html">PHPExcel_Reader</a><br />
               <a href="../li_PHPExcel_Reader_Excel5.html">PHPExcel_Reader_Excel5</a><br />
               <a href="../li_PHPExcel_Reader_Excel2007.html">PHPExcel_Reader_Excel2007</a><br />
               <a href="../li_PHPExcel_RichText.html">PHPExcel_RichText</a><br />
               <a href="../li_PHPExcel_Settings.html">PHPExcel_Settings</a><br />
               <a href="../li_PHPExcel_Shared.html">PHPExcel_Shared</a><br />
-              <a href="../li_PHPExcel_Shared_Best_Fit.html">PHPExcel_Shared_Best_Fit</a><br />
               <a href="../li_PHPExcel_Shared_Escher.html">PHPExcel_Shared_Escher</a><br />
               <a href="../li_PHPExcel_Shared_OLE.html">PHPExcel_Shared_OLE</a><br />
+              <a href="../li_PHPExcel_Shared_Trend.html">PHPExcel_Shared_Trend</a><br />
               <a href="../li_PHPExcel_Shared_ZipArchive.html">PHPExcel_Shared_ZipArchive</a><br />
               <a href="../li_PHPExcel_Style.html">PHPExcel_Style</a><br />
               <a href="../li_PHPExcel_Worksheet.html">PHPExcel_Worksheet</a><br />
@@ -117,7 +118,7 @@ Source Location: /PHPExcel/Style/Alignment.php<br /><br />
 
 <h4>Copyright:</h4>
 <ul>
-  <li>Copyright (c) 2006 - 2011 PHPExcel (http://www.codeplex.com/PHPExcel)</li>
+  <li>Copyright (c) 2006 - 2012 PHPExcel (http://www.codeplex.com/PHPExcel)</li>
 </ul>
                 <p class="implements">
             Implements interfaces:
@@ -189,13 +190,13 @@ Source Location: /PHPExcel/Style/Alignment.php<br /><br />
 <a name="class_details"></a>
 <h3>Class Details</h3>
 <div class="tags">
-[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a36">36</a>]<br />
+[line 36]<br />
 PHPExcel_Style_Alignment<br /><br /><br /><br />
 <h4>Tags:</h4>
 <div class="tags">
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>Copyright (c) 2006 - 2011 PHPExcel (http://www.codeplex.com/PHPExcel)</td>
+    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>Copyright (c) 2006 - 2012 PHPExcel (http://www.codeplex.com/PHPExcel)</td>
   </tr>
 </table>
 </div>
@@ -210,13 +211,14 @@ PHPExcel_Style_Alignment<br /><br /><br /><br />
 
   <hr />
 	<a name="method__construct"></a>
-	<h3>constructor __construct <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a118">118</a>]</span></h3>
+	<h3>constructor __construct <span class="smalllinenumber">[line 125]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
 		<code>PHPExcel_Style_Alignment __construct(
-[
-$isSupervisor = false])</code>
+[boolean
+$isSupervisor = false], [boolean
+$isConditional = false])</code>
     </td></tr></table>
     </td></tr></table><br />
 	
@@ -236,9 +238,14 @@ $isSupervisor = false])</code>
     <div class="tags">
     <table border="0" cellspacing="0" cellpadding="0">
           <tr>
-        <td class="type">&nbsp;&nbsp;</td>
+        <td class="type">boolean&nbsp;&nbsp;</td>
         <td><b>$isSupervisor</b>&nbsp;&nbsp;</td>
-        <td></td>
+        <td>Flag indicating if this is a supervisor or not                                     Leave this value at default unless you understand exactly what                                         its ramifications are</td>
+      </tr>
+          <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$isConditional</b>&nbsp;&nbsp;</td>
+        <td>Flag indicating if this is a conditional style or not                                     Leave this value at default unless you understand exactly what                                         its ramifications are</td>
       </tr>
         </table>
     </div><br />
@@ -246,7 +253,7 @@ $isSupervisor = false])</code>
   </div>
   <hr />
 	<a name="methodapplyFromArray"></a>
-	<h3>method applyFromArray <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a218">218</a>]</span></h3>
+	<h3>method applyFromArray <span class="smalllinenumber">[line 231]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -293,7 +300,7 @@ $pStyles = null])</code>
   </div>
   <hr />
 	<a name="methodbindParent"></a>
-	<h3>method bindParent <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a130">130</a>]</span></h3>
+	<h3>method bindParent <span class="smalllinenumber">[line 143]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -329,7 +336,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetActiveCell"></a>
-	<h3>method getActiveCell <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a184">184</a>]</span></h3>
+	<h3>method getActiveCell <span class="smalllinenumber">[line 197]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -357,7 +364,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetActiveSheet"></a>
-	<h3>method getActiveSheet <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a162">162</a>]</span></h3>
+	<h3>method getActiveSheet <span class="smalllinenumber">[line 175]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -382,7 +389,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetHashCode"></a>
-	<h3>method getHashCode <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a453">453</a>]</span></h3>
+	<h3>method getHashCode <span class="smalllinenumber">[line 466]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -410,7 +417,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetHorizontal"></a>
-	<h3>method getHorizontal <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a253">253</a>]</span></h3>
+	<h3>method getHorizontal <span class="smalllinenumber">[line 266]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -435,7 +442,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetIndent"></a>
-	<h3>method getIndent <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a420">420</a>]</span></h3>
+	<h3>method getIndent <span class="smalllinenumber">[line 433]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -460,7 +467,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetIsSupervisor"></a>
-	<h3>method getIsSupervisor <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a141">141</a>]</span></h3>
+	<h3>method getIsSupervisor <span class="smalllinenumber">[line 154]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -485,7 +492,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetSelectedCells"></a>
-	<h3>method getSelectedCells <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a173">173</a>]</span></h3>
+	<h3>method getSelectedCells <span class="smalllinenumber">[line 186]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -513,7 +520,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetSharedComponent"></a>
-	<h3>method getSharedComponent <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a152">152</a>]</span></h3>
+	<h3>method getSharedComponent <span class="smalllinenumber">[line 165]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -538,7 +545,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetShrinkToFit"></a>
-	<h3>method getShrinkToFit <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a389">389</a>]</span></h3>
+	<h3>method getShrinkToFit <span class="smalllinenumber">[line 402]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -563,7 +570,7 @@ $parent)</code>
   </div>
   <hr />
 	<a name="methodgetStyleArray"></a>
-	<h3>method getStyleArray <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a195">195</a>]</span></h3>
+	<h3>method getStyleArray <span class="smalllinenumber">[line 208]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -599,7 +606,7 @@ $array)</code>
   </div>
   <hr />
 	<a name="methodgetTextRotation"></a>
-	<h3>method getTextRotation <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a318">318</a>]</span></h3>
+	<h3>method getTextRotation <span class="smalllinenumber">[line 331]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -624,7 +631,7 @@ $array)</code>
   </div>
   <hr />
 	<a name="methodgetVertical"></a>
-	<h3>method getVertical <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a286">286</a>]</span></h3>
+	<h3>method getVertical <span class="smalllinenumber">[line 299]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -649,7 +656,7 @@ $array)</code>
   </div>
   <hr />
 	<a name="methodgetWrapText"></a>
-	<h3>method getWrapText <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a358">358</a>]</span></h3>
+	<h3>method getWrapText <span class="smalllinenumber">[line 371]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -674,7 +681,7 @@ $array)</code>
   </div>
   <hr />
 	<a name="methodsetHorizontal"></a>
-	<h3>method setHorizontal <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a266">266</a>]</span></h3>
+	<h3>method setHorizontal <span class="smalllinenumber">[line 279]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -710,7 +717,7 @@ $pValue = PHPExcel_Style_Alignment::HORIZONTAL_GENERAL])</code>
   </div>
   <hr />
 	<a name="methodsetIndent"></a>
-	<h3>method setIndent <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a433">433</a>]</span></h3>
+	<h3>method setIndent <span class="smalllinenumber">[line 446]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -746,7 +753,7 @@ $pValue = 0])</code>
   </div>
   <hr />
 	<a name="methodsetShrinkToFit"></a>
-	<h3>method setShrinkToFit <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a402">402</a>]</span></h3>
+	<h3>method setShrinkToFit <span class="smalllinenumber">[line 415]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -782,7 +789,7 @@ $pValue = false])</code>
   </div>
   <hr />
 	<a name="methodsetTextRotation"></a>
-	<h3>method setTextRotation <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a332">332</a>]</span></h3>
+	<h3>method setTextRotation <span class="smalllinenumber">[line 345]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -821,7 +828,7 @@ $pValue = 0])</code>
   </div>
   <hr />
 	<a name="methodsetVertical"></a>
-	<h3>method setVertical <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a299">299</a>]</span></h3>
+	<h3>method setVertical <span class="smalllinenumber">[line 312]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -857,7 +864,7 @@ $pValue = PHPExcel_Style_Alignment::VERTICAL_BOTTOM])</code>
   </div>
   <hr />
 	<a name="methodsetWrapText"></a>
-	<h3>method setWrapText <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a371">371</a>]</span></h3>
+	<h3>method setWrapText <span class="smalllinenumber">[line 384]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -893,7 +900,7 @@ $pValue = false])</code>
   </div>
   <hr />
 	<a name="method__clone"></a>
-	<h3>method __clone <span class="smalllinenumber">[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a471">471</a>]</span></h3>
+	<h3>method __clone <span class="smalllinenumber">[line 484]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -925,70 +932,70 @@ $pValue = false])</code>
 	<a name="constHORIZONTAL_CENTER"></a>
 	<p></p>
 	<h4>HORIZONTAL_CENTER = <span class="value">&nbsp;'center'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a42">42</a>]</p>
+	<p>[line 42]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constHORIZONTAL_CENTER_CONTINUOUS"></a>
 	<p></p>
 	<h4>HORIZONTAL_CENTER_CONTINUOUS = <span class="value">&nbsp;'centerContinuous'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a43">43</a>]</p>
+	<p>[line 43]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constHORIZONTAL_GENERAL"></a>
 	<p></p>
 	<h4>HORIZONTAL_GENERAL = <span class="value">&nbsp;'general'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a39">39</a>]</p>
+	<p>[line 39]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constHORIZONTAL_JUSTIFY"></a>
 	<p></p>
 	<h4>HORIZONTAL_JUSTIFY = <span class="value">&nbsp;'justify'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a44">44</a>]</p>
+	<p>[line 44]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constHORIZONTAL_LEFT"></a>
 	<p></p>
 	<h4>HORIZONTAL_LEFT = <span class="value">&nbsp;'left'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a40">40</a>]</p>
+	<p>[line 40]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constHORIZONTAL_RIGHT"></a>
 	<p></p>
 	<h4>HORIZONTAL_RIGHT = <span class="value">&nbsp;'right'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a41">41</a>]</p>
+	<p>[line 41]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constVERTICAL_BOTTOM"></a>
 	<p></p>
 	<h4>VERTICAL_BOTTOM = <span class="value">&nbsp;'bottom'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a47">47</a>]</p>
+	<p>[line 47]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constVERTICAL_CENTER"></a>
 	<p></p>
 	<h4>VERTICAL_CENTER = <span class="value">&nbsp;'center'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a49">49</a>]</p>
+	<p>[line 49]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constVERTICAL_JUSTIFY"></a>
 	<p></p>
 	<h4>VERTICAL_JUSTIFY = <span class="value">&nbsp;'justify'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a50">50</a>]</p>
+	<p>[line 50]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
 	<a name="constVERTICAL_TOP"></a>
 	<p></p>
 	<h4>VERTICAL_TOP = <span class="value">&nbsp;'top'</span></h4>
-	<p>[line <a href="../__filesource/fsource_PHPExcel_Style__PHPExcelStyleAlignment.php.html#a48">48</a>]</p>
+	<p>[line 48]</p>
   
   <br />
 	<div class="top">[ <a href="#top">Top</a> ]</div><br />
@@ -996,7 +1003,7 @@ $pValue = false])</code>
 
         <div class="credit">
 		    <hr />
-		    Documentation generated on Sun, 27 Feb 2011 16:26:49 -0800 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+		    Documentation generated on Fri, 12 Oct 2012 00:15:09 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
 	      </div>
       </td></tr></table>
     </td>
